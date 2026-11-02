@@ -1,0 +1,30 @@
+{
+ "stage": "S3",
+ "runs": 2,
+ "passed": 2,
+ "gate_passed": true,
+ "rows": [
+  {
+   "run": "shinai_learned_seed228",
+   "passed": true,
+   "why": [],
+   "placed_on_b": 6,
+   "handed_over": 0,
+   "status": "verified",
+   "placement_xy_err_max_mm": 4.0,
+   "secondary_collapses": 0,
+   "sim_seconds": 300.65
+  },
+  {
+   "run": "shinai_seed228",
+   "passed": true,
+   "why": [],
+   "placed_on_b": 6,
+   "handed_over": 0,
+   "status": "verified",
+   "placement_xy_err_max_mm": 2.7,
+   "secondary_collapses": 0,
+   "sim_seconds": 300.46
+  }
+ ]
+}

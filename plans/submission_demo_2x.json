@@ -1,0 +1,45 @@
+{
+ "frames": "artifacts/video_frames",
+ "fps": 30,
+ "size": [
+  1920,
+  1080
+ ],
+ "out": "artifacts/video/PAI最終課題_182174.mp4",
+ "segments": [
+  {
+   "card": {
+    "title": "荷崩れしたパレットを、ロボットが自分で積み替える",
+    "lines": [
+     "NVIDIA Isaac Sim ・ 2 倍速 ・ 省略なし"
+    ]
+   },
+   "seconds": 3
+  },
+  {
+   "frames": "demo228_dressed3",
+   "run": "artifacts/demo_v3/shinai_learned_seed228"
+  },
+  {
+   "card": {
+    "title": "結果",
+    "from_result": true,
+    "note": "この走行の記録から集計した値です（シミュレーション）"
+   },
+   "run": "artifacts/demo_v3/shinai_learned_seed228",
+   "seconds": 5
+  },
+  {
+   "card": {
+    "title": "AI の使い方",
+    "lines": [
+     "カメラの深度と切り分けから、箱の位置と向きを推定します。",
+     "物理の試行から学んだ予測で、取ると崩れる箱を見積もり、取る順を決めます。",
+     "この予測は、学習に使っていない崩れ方でも規則より正しく当てました。"
+    ]
+   },
+   "seconds": 5
+  }
+ ],
+ "layout": "console"
+}

@@ -1,0 +1,36 @@
+{
+  "validation": {
+    "n": 200,
+    "seed": 200,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        99,
+        0
+      ],
+      [
+        0,
+        101
+      ]
+    ],
+    "review_rate": 0.0
+  },
+  "shifted_test": {
+    "n": 200,
+    "seed": 300,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        98,
+        0
+      ],
+      [
+        0,
+        102
+      ]
+    ],
+    "review_rate": 0.0
+  },
+  "seconds": 6.969455999991624,
+  "source": "MuJoCo actual onboard RGB render, 3 equipment bodies, randomized light/view/noise. No real-world validation."
+}

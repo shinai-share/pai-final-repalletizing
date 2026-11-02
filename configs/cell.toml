@@ -1,0 +1,209 @@
+# Load-collapse recovery cell. SI units (m, kg, s, rad). Values marked "tentative" are
+# placeholders agreed with the owner on 2026-10-17 until field data is available.
+
+[pallet]                       # JIS T11 pallet
+size = [1.1, 1.1, 0.144]
+a_center = [-0.95, 0.0]        # source pallet (collapsed load)
+b_center = [0.95, 0.0]         # destination pallet
+gap = 0.8                      # required clear distance between pallet edges (checked on load)
+friction = [0.6, 0.5]          # static, dynamic (wood vs cardboard)
+
+[handover]                     # cases the robot will not stack (tipped over / damaged): floor strips beside B,
+# Beside B (away from A's spill) and in a column beyond it; all inside B's camera view up to case height.
+spots = [[0.62, 0.88], [0.95, 0.88], [1.28, 0.88], [0.62, -0.88], [0.95, -0.88], [1.28, -0.88],
+         [1.75, -1.02], [1.75, 1.02]]   # the two beyond the righting tables stand off: a tipped case and its plate reach 0.39 m out
+spot_yaw_deg = 90.0            # long edge along y
+
+[staging]                      # righting tables: a case lying down is tipped over its bottom edge here and gripped again from the top
+tables = [[1.72, -0.30], [1.72, 0.30]]   # inside B's camera view up to the top of a case standing on them
+table_size = [0.40, 0.48, 0.12]   # cases tip along y, so y holds the centre of mass before and after it tips (requirements
+                               # v05, stage 2) wherever it lies within com_allowance; 0.36 dropped S1-end trial 0 off its
+                               # far edge. x holds the long edge and stays clear of pallet B and inside B's camera view
+com_allowance = 0.06           # m: a case's centre of mass may lie this far off its box centre (the contents' spec)
+
+[variation]                    # per-case contents (physics only; the robot estimates them by a test lift)
+com_xy = 0.06                  # m: centre of mass up to this far from the box centre along each horizontal axis
+com_z = 0.03
+mass = [8.0, 14.0]             # kg: partly filled to full beverage cases
+
+[gantry]
+origin_height = 1.6            # tool face height at joint zero
+x_range = [-1.95, 1.95]
+y_range = [-1.5, 1.5]          # covers the floor where a collapse can spill (0.9 m beyond the pallet)
+z_range = [-1.55, 0.0]         # relative to origin_height. Up to 0.6 before 2026-10-29 (the ram left its trolley) and
+                               # 0.45 until 2026-10-31: higher, the drawn-up fork bars meet the trolley, and a tilted
+                               # wrist does above -0.0 (structure.interference). A four-layer load of the 0.25 m product
+                               # needs the cup face at 1.54 m to carry over it with 0.15 m to spare
+yaw_range = [-3.2, 3.2]
+pitch_range = [-0.61, 0.61]    # wrist about the tool y axis: squares the cups to a face tilted across its long edge
+                               # (35 deg; a 10 deg mismatch leaves the far cups 17 mm off the face, beyond their seal)
+roll_range = [-1.92, 1.92]     # wrist about the tool x axis (the plate's long side), through the centre of the
+                               # cup face: rights a case about the long edge of the face the cups hold, and
+                               # turns up to 20 degrees further to take out the droop of the cups
+v_max = [1.5, 1.5, 1.0, 2.0, 1.5, 1.5]   # x, y, z, yaw, pitch, roll (typical of gantry palletisers)
+a_max = [2.5, 2.5, 2.0, 4.0, 3.0, 3.0]
+wrist_torque_limit = 60.0      # N m: a 12 kg case 0.28 m from the axis needs about 33
+park_z = 0.0                   # the park pose's height: the top of the range (0.3 until 2026-10-31)
+slow_speed = 0.4               # m/s for touch-down search, first lift and placing
+slow_accel = 0.5               # m/s^2: inertial load stays well below the load-cell thresholds
+fine_touch_speed = 0.008        # m/s for the last 15 mm before an expected face: the stiff z drive's reaction grows
+                               # by about speed x 1000 N per physics step, so contact is felt before it presses hard
+touch_speed = 0.05             # m/s while searching for contact: at 0.4 m/s the 50 ms needed to be sure of a
+                               # touch-down pressed a case with about 10 kN in Isaac
+beam_height = 2.9
+tool_size = [0.30, 0.22, 0.06]
+cup_offsets = [[0.10, 0.07], [0.10, -0.07], [-0.10, 0.07], [-0.10, -0.07]]
+travel_clearance = 0.15        # minimum gap between carried load and anything below it during traverse
+drive_stiffness = 1.0e4        # acceleration-type drive
+drive_damping = 200.0
+
+[tool_camera]                  # RGB-D camera on the front edge of the suction plate, looking forward-down
+offset = [0.0, 0.16, 0.10]     # in the tool frame
+pitch_deg = 40.0               # rotation about tool x away from straight down
+focal_mm = 12.0
+aperture_mm = 20.955
+resolution = [640, 480]
+
+[down_camera]                  # at the plate centre, looking along the cups' approach: watches the path of the plate (v05 R4)
+offset = [0.0, 0.0, -0.003]    # in the tool frame, just below the cup face, between the cups
+focal_mm = 6.0                 # wide: the plate's footprint and a margin from a few centimetres away
+resolution = [160, 120]
+every_s = 0.1                  # a look this often during an approach
+latency_s = 0.15               # from the look to the drive braking (camera, judgement, drive); tentative
+
+[overhead_camera]              # one above each pallet; the gantry parks outside their view to capture
+height = 3.4
+focal_mm = 24.0
+resolution = [640, 480]
+resolution_b = [1280, 960]     # B checks each placement: at 640 px a long edge reads up to 2 deg off
+
+[under_camera]                 # on the floor between the pallets, looking up: measures the carried case from below
+position = [0.0, -0.55, 0.05]
+focal_mm = 18.0
+resolution = [640, 480]
+
+[gripper]                      # vacuum cups, simulated by Isaac Surface Gripper
+# Where Isaac's Surface Gripper lets go. It releases on transient constraint values, not on the load: at 300/150 an
+# 8 kg case (20 N a cup) let go in a slow half turn; at 2400/1200 a 140 kg hang (343 N a cup) held still
+# (scripts/probe_grip_limit.py). So these only keep the artefact out; the seal's capacity is the planner's
+# (planning limits below, with a safety factor), and losing the vacuum is tested by injecting it.
+coaxial_force_limit = 2400.0
+shear_force_limit = 1200.0
+planning_coaxial_limit = 150.0 # N per cup the robot plans on: half the ideal, for leakage through corrugated board
+                               # (requirements v05; tentative until a real cup and board are measured). Safety factor on top.
+planning_shear_limit = 75.0
+max_grip_distance = 0.012
+retry_interval = 0.2
+rated_payload = 20.0           # kg
+max_face_tilt_deg = 15.0       # bellows cups seal up to this face tilt
+cup_twist_stiffness = 10.0     # angular drive about each cup's axis (Isaac units, per degree): a bellows twists softly; at
+                               # 10000 the cups let go of an 8 kg case in a slow turn (scripts/probe_grip_limit.py)
+cup_tilt_stiffness = 10000.0   # angular drive of each cup (Isaac units). 2000 dropped a 14 kg case in the quarter turn; 5000-20000 held it, drooping 12-15 deg (artifacts/probe_turn.json)
+
+[layout]                       # how a full pallet is built before transport
+cols = 3
+rows = 4
+layers = 4
+interlock = true               # rotate alternate layers by 90 deg
+
+[[sku]]
+id = "BEV-500x24"
+name = "飲料ケース 500mL×24"
+size = [0.36, 0.27, 0.22]      # tentative; leaves 5-7 mm gaps in the 3 x 4 pattern
+mass = 12.0                    # tentative
+friction = [0.5, 0.4]
+com_uncertainty = 0.06         # a partly emptied case: product knowledge the robot may use (not the drawn truth)
+
+[[sku]]
+id = "CTN-M"
+name = "段ボール 中"
+size = [0.36, 0.27, 0.25]      # tentative
+mass = 8.0                     # tentative
+friction = [0.5, 0.4]
+com_uncertainty = 0.06
+
+[physics]
+dt = 0.008333333               # 120 Hz
+position_iterations = 16
+velocity_iterations = 2
+
+[transport]                    # truck motion that collapses the load (ranges, sampled per seed)
+brake_decel = [3.5, 7.0]       # m/s^2
+lateral_amp = [0.01, 0.03]     # m, sway
+lateral_freq = [1.0, 2.5]      # Hz
+vertical_amp = [0.002, 0.008]  # m, road bumps
+vertical_freq = [6.0, 12.0]    # Hz
+duration = 3.0                 # s, minimum length of the transport event
+wrap_failure_layers = [1, 2]   # number of top layers whose stretch wrap gave way (only these may slide)
+
+[contact]                      # damage limits per contact (requirements v05 chapter 3; tentative, no carton measured)
+# The up-down axis reading has two scales (scripts/probe_zload.py, artifacts/probe_zload.json): a load hanging on the
+# cups reads 1/8 (7.99 N per unit: fitted on 8 and 14 kg, 11 kg read back exactly); a force on the links themselves -
+# their inertia, and a face pressing on the plate - reads about 1:1 (33 kg at 2 m/s^2 = 66 N read as 63.1).
+cup_load_gain = 7.988          # N per unit, loads through the cups
+link_force_gain = 1.045        # N per unit, forces on the plate: what the empty cups feel touching a face. 0 = not calibrated
+touch_detect = 30.0            # N at which the empty cups count a face as touched (the old raw threshold 40 was about 42 N)
+touch_static = 50.0            # N the empty cups may press a face with, lasting
+touch_peak = 300.0             # N in one physics step (counted apart until the step-size check)
+landing_static = 80.0          # N the tines may add on the surface below, lasting
+landing_peak = 300.0
+collision = 200.0              # N the empty tool may read beyond its free reading before it counts as struck: its own
+                               # motion reads up to about 69 N; tines driven into a stack read 3,400 (S3 102)
+
+[appearance]                   # what people see (linear RGB). The robot judges by depth and labels, never colour.
+pallet_color = [0.20, 0.205, 0.215]   # grey plastic pallet, as in beverage logistics: far from the brown cases
+floor_color = [0.09, 0.17, 0.12]      # green epoxy warehouse floor
+case_colors = [[0.50, 0.31, 0.14], [0.44, 0.27, 0.12], [0.56, 0.36, 0.17]]   # kraft corrugated board, a little uneven
+case_print_color = [0.05, 0.16, 0.42] # printed band on the top and the brand panel on one end
+frame_color = [0.85, 0.55, 0.05]      # gantry painted safety yellow
+
+[rendering]                    # pictures for people only (Inspector and video)
+people_resolution = [1920, 1080]
+inset_resolution = [960, 540]
+antialiasing = 3               # DLSS
+people_subframes = 4
+
+[fork]                         # under-supports beside the cups (design: requirements v05, design drawings v01)
+bar_x = 0.13                   # bars at x = +-0.13: inside the plate (0.15) and under a held case (0.18)
+bar_y = -0.18                  # on the -y side, away from the hand camera; 37 mm clear of a held case's long face
+bar_size = [0.04, 0.015, 0.45]  # 0.62 on 2026-10-29-30; 0.45 from 2026-10-31: the stroke below and 0.12 m in its guide
+tine_size = [0.04, 0.23, 0.010]  # 0.22 before 2026-10-29 (fully in, it had left its bar). Not longer: from 0.24 m its
+                               # retracted tail made the plan refuse the crosswise grip on a steep face; the sleeve
+                               # reaches forward instead ([structure])
+extension_range = [-0.08, 0.32]   # retracted: tines 80 mm above the cup face. Only upright cases ride on the tines:
+                                  # the tallest (0.25) needs 0.295 and a 20 mm catch below it over A (2026-10-31)
+insert_range = [0.0, 0.24]        # fully in, the tine tips are 60 mm past the case centre
+grip_gap = 0.003               # the executive backs off 3 mm before suction
+clearance = 0.005
+z_force_limit = 400.0
+y_force_limit = 200.0
+drive_stiffness = 50000.0      # force-type drive: N/m
+drive_damping = 2000.0
+support_fraction = 0.8         # target only; the transfer is accepted by the measured loads (v05 4.5)
+tine_load_limit = 100.0
+insert_force_limit = 30.0
+pull_force_limit = 20.0        # resistance while pulling the tines out that means they drag the case
+z_speed = 0.2
+y_speed = 0.1
+friction = [0.25, 0.20]        # low-scuff pad (design value; no measurement of a real pad yet)
+pad_stiffness = 100000.0       # compliant contact (tentative, settled by F0)
+pad_damping = 1000.0
+part_mass = 1.0
+
+[structure]                    # 2026-10-29: the gantry's sliding parts stay in their guides (shinai_pi/structure.py)
+ram_length = 2.40              # m: the z stroke and the trolley's guide; raised, it stands about 1.7 m above the beam
+ram_section = 0.10             # m, square steel tube
+ram_wall = 0.005
+ram_min_engagement = 0.30      # of the trolley's 0.40 m guide, at every height
+trolley_size = [0.36, 0.30, 0.40]
+# 2026-10-31 (review): the fork's arm met the plate along an edge, and the drawn-up bars stood 0.69 m above the cup
+# face, into the ram when the wrist rolled and pitched together. Now a yoke is bolted over the plate's -y face, the
+# guides rise from the cup face on the yoke, and the stroke is what an upright case needs.
+yoke_height = 0.10
+fork_guide_height = 0.30
+fork_guide_wall = 0.01
+fork_min_engagement = 0.12
+tine_sleeve = [-0.06, 0.035]   # m along y from the bar's centre; the front stays 10 mm off the deepest held case's face
+tine_sleeve_lid = 0.006
+tine_min_engagement = 0.025    # fully in, carrying: short for a loaded cantilever; a product needs a two-stage telescopic tine
+steel_density = 7850.0         # kg/m^3

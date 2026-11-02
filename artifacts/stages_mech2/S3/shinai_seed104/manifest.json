@@ -1,0 +1,13 @@
+{
+ "episode": "shinai-104",
+ "git_commit": "b2e7cbd3f8260204fbbbc5ea2c524563e7bce289",
+ "seed": 104,
+ "policy": "shinai",
+ "cell_config": "cell.toml",
+ "cell_config_sha256": "9c14c7a9077cd3086d61fd03806f5b836d9c6db9f3dfb81ea8922ef75d3e9275",
+ "simulator": "NVIDIA Isaac Sim 6.2.0.0",
+ "physics_dt": 0.008333333,
+ "python": "3.12.10",
+ "run_datetime_utc": "2026-10-29T03:40:31Z",
+ "result_status": "verified"
+}

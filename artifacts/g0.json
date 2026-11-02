@@ -1,0 +1,113 @@
+{
+  "gate": "G0",
+  "sku": "BEV-500x24",
+  "mass_kg": 12.0,
+  "held_after_close": [
+    "case_00"
+  ],
+  "final_position": [
+    0.585,
+    -0.4125,
+    0.254
+  ],
+  "slot_position": [
+    0.585,
+    -0.4125,
+    0.254
+  ],
+  "position_error_m": 0.0,
+  "yaw_deg": 0.0,
+  "sim_seconds": 16.48,
+  "wall_seconds": 2.79,
+  "boot_seconds": 6.2,
+  "vram_used_mib": 4188,
+  "camera_depth_range_m": [
+    0.58,
+    3.4
+  ],
+  "camera_instances": [
+    "/World/cell/cases/case_00/geom",
+    "/World/cell/floor/geom",
+    "/World/cell/gantry/base/leg_nn",
+    "/World/cell/gantry/base/leg_np",
+    "/World/cell/gantry/base/leg_pn",
+    "/World/cell/gantry/base/leg_pp",
+    "/World/cell/gantry/base/rail_n",
+    "/World/cell/gantry/base/rail_p"
+  ],
+  "moves": [
+    {
+      "move": "above_source",
+      "duration_s": 1.592,
+      "final_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripped": []
+    },
+    {
+      "move": "descend",
+      "duration_s": 1.932,
+      "final_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripped": []
+    },
+    {
+      "move": "lift",
+      "duration_s": 1.932,
+      "final_error": [
+        0.0,
+        0.0,
+        0.0001,
+        0.0
+      ],
+      "gripped": [
+        "case_00"
+      ]
+    },
+    {
+      "move": "traverse",
+      "duration_s": 2.079,
+      "final_error": [
+        0.0,
+        0.0,
+        0.0001,
+        0.0
+      ],
+      "gripped": [
+        "case_00"
+      ]
+    },
+    {
+      "move": "lower",
+      "duration_s": 1.93,
+      "final_error": [
+        0.0,
+        0.0,
+        0.0001,
+        0.0
+      ],
+      "gripped": [
+        "case_00"
+      ]
+    },
+    {
+      "move": "retreat",
+      "duration_s": 1.93,
+      "final_error": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "gripped": []
+    }
+  ],
+  "passed": true
+}

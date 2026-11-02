@@ -1,0 +1,879 @@
+{
+ "seed": 3000,
+ "policy": "shinai_learned",
+ "sku": "CTN-M",
+ "status": "unresolved",
+ "max_picks": null,
+ "sim_seconds": 1154.44,
+ "wall_seconds": 15806.5,
+ "observations": 31,
+ "side_observations": 2,
+ "safety_stops": 0,
+ "grip_failures": 0,
+ "fallback_picks": 0,
+ "learned_decisions": 28,
+ "learned_changed": 16,
+ "remaining": {
+  "case_20": "吸着板か爪の進路にほかの物があり、取れない（人が確認）",
+  "case_21": "吸着板か爪の進路にほかの物があり、取れない（人が確認）",
+  "case_22": "吸着板か爪の進路にほかの物があり、取れない（人が確認）",
+  "case_23": "吸着板か爪の進路にほかの物があり、取れない（人が確認）"
+ },
+ "unseen_outside_reach": [],
+ "not_found": 0,
+ "transport": {
+  "transport_s": 3.008,
+  "settled_after_s": 0.0
+ },
+ "brake_decel": 4.57,
+ "loose_layers": [
+  0,
+  1
+ ],
+ "picks": 20,
+ "secondary_collapses": 0,
+ "disturbed_cases": 0,
+ "placed_cases_pushed": [
+  {
+   "case": "case_15",
+   "while_placing": "case_17",
+   "moved_mm": 8.0
+  },
+  {
+   "case": "case_16",
+   "while_placing": "case_17",
+   "moved_mm": 12.5
+  }
+ ],
+ "picks_with_disturbance": 0,
+ "drops_in_transit": 0,
+ "prediction": {
+  "true_positive": 0,
+  "missed": 0,
+  "false_alarm": 0
+ },
+ "placed_on_b": 20,
+ "placement_xy_err_max_m": 0.0079,
+ "placement_yaw_max_deg": 1.26,
+ "placement_tilt_max_deg": 90.0,
+ "placement_errors": {
+  "case_15": {
+   "slot": 0,
+   "xy_m": 0.0079,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.26
+  },
+  "case_12": {
+   "slot": 1,
+   "xy_m": 0.0039,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.14
+  },
+  "case_14": {
+   "slot": 2,
+   "xy_m": 0.0009,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.02
+  },
+  "case_16": {
+   "slot": 3,
+   "xy_m": 0.0005,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.01
+  },
+  "case_13": {
+   "slot": 4,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.02
+  },
+  "case_19": {
+   "slot": 5,
+   "xy_m": 0.0007,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_17": {
+   "slot": 6,
+   "xy_m": 0.0002,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.29
+  },
+  "case_18": {
+   "slot": 7,
+   "xy_m": 0.0004,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.04
+  },
+  "case_00": {
+   "slot": 8,
+   "xy_m": 0.0002,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.19
+  },
+  "case_08": {
+   "slot": 9,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.39
+  },
+  "case_05": {
+   "slot": 10,
+   "xy_m": 0.0002,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.48
+  },
+  "case_02": {
+   "slot": 11,
+   "xy_m": 0.0005,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.36
+  },
+  "case_04": {
+   "slot": 12,
+   "xy_m": 0.0001,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.11
+  },
+  "case_01": {
+   "slot": 13,
+   "xy_m": 0.0005,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.02
+  },
+  "case_07": {
+   "slot": 14,
+   "xy_m": 0.0007,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.02
+  },
+  "case_06": {
+   "slot": 15,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.06
+  },
+  "case_03": {
+   "slot": 16,
+   "xy_m": 0.0005,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.69
+  },
+  "case_11": {
+   "slot": 17,
+   "xy_m": 0.0001,
+   "z_m": 0.01,
+   "tilt_deg": 90.0,
+   "yaw_deg": 0.16
+  },
+  "case_10": {
+   "slot": 18,
+   "xy_m": 0.0002,
+   "z_m": 0.01,
+   "tilt_deg": 90.0,
+   "yaw_deg": 0.01
+  },
+  "case_09": {
+   "slot": 19,
+   "xy_m": 0.0001,
+   "z_m": 0.0101,
+   "tilt_deg": 90.0,
+   "yaw_deg": 0.56
+  }
+ },
+ "placed_unscored": [],
+ "final_positions": {
+  "case_00": [
+   1.317,
+   0.138,
+   0.269
+  ],
+  "case_01": [
+   0.813,
+   -0.366,
+   0.519
+  ],
+  "case_02": [
+   1.316,
+   0.413,
+   0.269
+  ],
+  "case_03": [
+   0.538,
+   -0.0,
+   0.519
+  ],
+  "case_04": [
+   0.537,
+   -0.367,
+   0.519
+  ],
+  "case_05": [
+   0.95,
+   0.413,
+   0.269
+  ],
+  "case_06": [
+   1.362,
+   -0.367,
+   0.519
+  ],
+  "case_07": [
+   1.088,
+   -0.366,
+   0.519
+  ],
+  "case_08": [
+   0.583,
+   0.412,
+   0.269
+  ],
+  "case_09": [
+   1.363,
+   0.0,
+   0.529
+  ],
+  "case_10": [
+   1.087,
+   0.0,
+   0.529
+  ],
+  "case_11": [
+   0.812,
+   -0.0,
+   0.529
+  ],
+  "case_12": [
+   0.95,
+   -0.409,
+   0.269
+  ],
+  "case_13": [
+   0.95,
+   -0.137,
+   0.269
+  ],
+  "case_14": [
+   1.316,
+   -0.412,
+   0.269
+  ],
+  "case_15": [
+   0.586,
+   -0.42,
+   0.269
+  ],
+  "case_16": [
+   0.583,
+   -0.137,
+   0.269
+  ],
+  "case_17": [
+   0.583,
+   0.137,
+   0.269
+  ],
+  "case_18": [
+   0.95,
+   0.138,
+   0.269
+  ],
+  "case_19": [
+   1.317,
+   -0.137,
+   0.269
+  ],
+  "case_20": [
+   -1.343,
+   1.036,
+   0.18
+  ],
+  "case_21": [
+   -1.069,
+   1.04,
+   0.18
+  ],
+  "case_22": [
+   -0.794,
+   1.033,
+   0.18
+  ],
+  "case_23": [
+   -0.521,
+   1.03,
+   0.18
+  ]
+ },
+ "handed_over": 0,
+ "left_on_a": 4,
+ "cases_never_detected": [],
+ "left_on_a_positions": {
+  "case_20": [
+   -1.343,
+   1.036,
+   0.18
+  ],
+  "case_21": [
+   -1.069,
+   1.04,
+   0.18
+  ],
+  "case_22": [
+   -0.794,
+   1.033,
+   0.18
+  ],
+  "case_23": [
+   -0.521,
+   1.03,
+   0.18
+  ]
+ },
+ "per_pick": [
+  {
+   "case": "case_15",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_12",
+   "risk": 0.011,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_14",
+   "risk": 0.012,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_16",
+   "risk": 0.014,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_13",
+   "risk": 0.013,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_19",
+   "risk": 0.016,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_17",
+   "risk": 0.017,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_18",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_00",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_08",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_05",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_02",
+   "risk": 0.001,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_04",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_01",
+   "risk": 0.002,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_07",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_06",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_03",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_11",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_10",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_09",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  }
+ ],
+ "start_positions": {
+  "case_00": [
+   -1.316,
+   -0.396,
+   0.269
+  ],
+  "case_01": [
+   -0.948,
+   -0.394,
+   0.269
+  ],
+  "case_02": [
+   -0.582,
+   -0.398,
+   0.269
+  ],
+  "case_03": [
+   -1.316,
+   -0.124,
+   0.269
+  ],
+  "case_04": [
+   -0.949,
+   -0.122,
+   0.269
+  ],
+  "case_05": [
+   -0.583,
+   -0.125,
+   0.269
+  ],
+  "case_06": [
+   -1.316,
+   0.148,
+   0.269
+  ],
+  "case_07": [
+   -0.949,
+   0.148,
+   0.269
+  ],
+  "case_08": [
+   -0.582,
+   0.15,
+   0.269
+  ],
+  "case_09": [
+   -1.328,
+   0.736,
+   0.135
+  ],
+  "case_10": [
+   -0.946,
+   0.742,
+   0.135
+  ],
+  "case_11": [
+   -0.58,
+   0.759,
+   0.135
+  ],
+  "case_12": [
+   -1.368,
+   -0.219,
+   0.519
+  ],
+  "case_13": [
+   -1.054,
+   -0.219,
+   0.519
+  ],
+  "case_14": [
+   -0.781,
+   -0.235,
+   0.519
+  ],
+  "case_15": [
+   -0.496,
+   -0.236,
+   0.519
+  ],
+  "case_16": [
+   -1.359,
+   0.146,
+   0.519
+  ],
+  "case_17": [
+   -1.063,
+   0.16,
+   0.519
+  ],
+  "case_18": [
+   -0.787,
+   0.148,
+   0.519
+  ],
+  "case_19": [
+   -0.511,
+   0.151,
+   0.519
+  ],
+  "case_20": [
+   -1.343,
+   1.036,
+   0.18
+  ],
+  "case_21": [
+   -1.069,
+   1.04,
+   0.18
+  ],
+  "case_22": [
+   -0.794,
+   1.033,
+   0.18
+  ],
+  "case_23": [
+   -0.521,
+   1.03,
+   0.18
+  ]
+ },
+ "case_states": {
+  "placed_on_b": 20,
+  "held_by_robot": 0,
+  "handed_over": 0,
+  "outside_cell": 0,
+  "left_in_cell": 4
+ },
+ "placed_quality": {
+  "ok": 17,
+  "ng": 3,
+  "unscored": 0
+ },
+ "case_ledger": {
+  "case_00": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_01": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_02": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_03": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_04": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_05": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_06": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_07": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_08": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_09": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ng",
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.7,
+   "where": null
+  },
+  "case_10": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ng",
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.7,
+   "where": null
+  },
+  "case_11": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ng",
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.7,
+   "where": null
+  },
+  "case_12": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_13": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_14": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_15": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_16": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_17": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_18": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_19": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_20": {
+   "state": "left_in_cell",
+   "detail": "吸着板か爪の進路にほかの物があり、取れない（人が確認）",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": true,
+   "left_pallet_at_s": 2.4,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_21": {
+   "state": "left_in_cell",
+   "detail": "吸着板か爪の進路にほかの物があり、取れない（人が確認）",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": true,
+   "left_pallet_at_s": 2.4,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_22": {
+   "state": "left_in_cell",
+   "detail": "吸着板か爪の進路にほかの物があり、取れない（人が確認）",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": true,
+   "left_pallet_at_s": 2.4,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_23": {
+   "state": "left_in_cell",
+   "detail": "吸着板か爪の進路にほかの物があり、取れない（人が確認）",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": true,
+   "left_pallet_at_s": 2.4,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  }
+ }
+}

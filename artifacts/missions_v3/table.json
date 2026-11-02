@@ -1,0 +1,229 @@
+{
+ "rows": [
+  {
+   "seed": 3001,
+   "policy": "shinai_learned",
+   "split": "unseen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved"
+   ],
+   "placed_ok": 30,
+   "placed_ng": 0,
+   "left_in_cell": 0,
+   "fell_before_start": 6,
+   "fell_before_start_outside_cell": 6,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 30,
+   "learned_changed": 15,
+   "sim_seconds_whole_task": 1482.52,
+   "wall_seconds_compute": 4103.8
+  },
+  {
+   "seed": 3001,
+   "policy": "shinai",
+   "split": "unseen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved"
+   ],
+   "placed_ok": 30,
+   "placed_ng": 0,
+   "left_in_cell": 0,
+   "fell_before_start": 6,
+   "fell_before_start_outside_cell": 6,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 0,
+   "learned_changed": 0,
+   "sim_seconds_whole_task": 1408.78,
+   "wall_seconds_compute": 7643.7
+  },
+  {
+   "seed": 3014,
+   "policy": "shinai_learned",
+   "split": "unseen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved"
+   ],
+   "placed_ok": 15,
+   "placed_ng": 0,
+   "left_in_cell": 0,
+   "fell_before_start": 9,
+   "fell_before_start_outside_cell": 9,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 15,
+   "learned_changed": 4,
+   "sim_seconds_whole_task": 722.67,
+   "wall_seconds_compute": 5436.3
+  },
+  {
+   "seed": 3014,
+   "policy": "shinai",
+   "split": "unseen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved"
+   ],
+   "placed_ok": 15,
+   "placed_ng": 0,
+   "left_in_cell": 0,
+   "fell_before_start": 9,
+   "fell_before_start_outside_cell": 9,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 0,
+   "learned_changed": 0,
+   "sim_seconds_whole_task": 726.68,
+   "wall_seconds_compute": 7284.8
+  },
+  {
+   "seed": 3000,
+   "policy": "shinai_learned",
+   "split": "seen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved",
+    "置いた後に基準の外にある 3 個"
+   ],
+   "placed_ok": 17,
+   "placed_ng": 3,
+   "left_in_cell": 4,
+   "fell_before_start": 7,
+   "fell_before_start_outside_cell": 0,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 28,
+   "learned_changed": 16,
+   "sim_seconds_whole_task": 1154.44,
+   "wall_seconds_compute": 15806.5
+  },
+  {
+   "seed": 3000,
+   "policy": "shinai",
+   "split": "seen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved",
+    "置いた後に基準の外にある 3 個"
+   ],
+   "placed_ok": 17,
+   "placed_ng": 3,
+   "left_in_cell": 4,
+   "fell_before_start": 7,
+   "fell_before_start_outside_cell": 0,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 0,
+   "learned_changed": 0,
+   "sim_seconds_whole_task": 1011.89,
+   "wall_seconds_compute": 19506.9
+  },
+  {
+   "seed": 3025,
+   "policy": "shinai_learned",
+   "split": "seen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved"
+   ],
+   "placed_ok": 22,
+   "placed_ng": 0,
+   "left_in_cell": 2,
+   "fell_before_start": 8,
+   "fell_before_start_outside_cell": 0,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 26,
+   "learned_changed": 16,
+   "sim_seconds_whole_task": 1243.37,
+   "wall_seconds_compute": 2771.3
+  },
+  {
+   "seed": 3025,
+   "policy": "shinai",
+   "split": "seen",
+   "status": "unresolved",
+   "s3_passed": false,
+   "s3_reasons": [
+    "終わり方 unresolved"
+   ],
+   "placed_ok": 22,
+   "placed_ng": 0,
+   "left_in_cell": 2,
+   "fell_before_start": 8,
+   "fell_before_start_outside_cell": 0,
+   "robot_drops": 0,
+   "robot_knocked_off": 0,
+   "secondary_collapses": 0,
+   "disturbed_cases": 0,
+   "learned_decisions": 0,
+   "learned_changed": 0,
+   "sim_seconds_whole_task": 1206.9,
+   "wall_seconds_compute": 3789.2
+  }
+ ],
+ "comparison": {
+  "verdict": "not_shown",
+  "verdict_ja": "今回の比較では確認できなかった",
+  "pairs": [
+   {
+    "seed": 3001,
+    "learned_harm": 0,
+    "rule_harm": 0,
+    "learned_only_failed_s3": false,
+    "learned_changed": 15,
+    "learned_decisions": 30
+   },
+   {
+    "seed": 3014,
+    "learned_harm": 0,
+    "rule_harm": 0,
+    "learned_only_failed_s3": false,
+    "learned_changed": 4,
+    "learned_decisions": 15
+   },
+   {
+    "seed": 3000,
+    "learned_harm": 0,
+    "rule_harm": 0,
+    "learned_only_failed_s3": false,
+    "learned_changed": 16,
+    "learned_decisions": 28
+   },
+   {
+    "seed": 3025,
+    "learned_harm": 0,
+    "rule_harm": 0,
+    "learned_only_failed_s3": false,
+    "learned_changed": 16,
+    "learned_decisions": 26
+   }
+  ],
+  "not_run": []
+ }
+}

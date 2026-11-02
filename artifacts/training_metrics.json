@@ -1,0 +1,35 @@
+{
+  "validation": {
+    "n": 800,
+    "seed": 200,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        387,
+        0
+      ],
+      [
+        0,
+        413
+      ]
+    ],
+    "review_rate": 0.0
+  },
+  "shifted_test": {
+    "n": 800,
+    "seed": 300,
+    "balanced_accuracy": 1.0,
+    "confusion_matrix": [
+      [
+        401,
+        0
+      ],
+      [
+        0,
+        399
+      ]
+    ],
+    "review_rate": 0.00125
+  },
+  "limitations": "Synthetic colored indicator recognition only; not real defect or sim-to-real validation."
+}

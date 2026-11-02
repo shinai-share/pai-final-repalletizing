@@ -1,0 +1,274 @@
+{
+ "seed": 228,
+ "policy": "shinai_learned",
+ "sku": "BEV-500x24",
+ "status": "verified",
+ "max_picks": null,
+ "sim_seconds": 300.65,
+ "wall_seconds": 516.5,
+ "observations": 9,
+ "side_observations": 2,
+ "safety_stops": 0,
+ "grip_failures": 0,
+ "fallback_picks": 0,
+ "learned_decisions": 6,
+ "learned_changed": 1,
+ "remaining": {},
+ "unseen_outside_reach": [],
+ "not_found": 0,
+ "transport": {
+  "transport_s": 3.008,
+  "settled_after_s": 0.0
+ },
+ "brake_decel": 4.49,
+ "loose_layers": [
+  0,
+  1
+ ],
+ "picks": 6,
+ "secondary_collapses": 0,
+ "disturbed_cases": 0,
+ "placed_cases_pushed": [],
+ "picks_with_disturbance": 0,
+ "drops_in_transit": 0,
+ "prediction": {
+  "true_positive": 0,
+  "missed": 0,
+  "false_alarm": 0
+ },
+ "placed_on_b": 6,
+ "placement_xy_err_max_m": 0.004,
+ "placement_yaw_max_deg": 1.16,
+ "placement_tilt_max_deg": 0.0,
+ "placement_errors": {
+  "case_03": {
+   "slot": 0,
+   "xy_m": 0.0002,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.46
+  },
+  "case_05": {
+   "slot": 1,
+   "xy_m": 0.0007,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.11
+  },
+  "case_04": {
+   "slot": 2,
+   "xy_m": 0.004,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.16
+  },
+  "case_02": {
+   "slot": 3,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.6
+  },
+  "case_01": {
+   "slot": 4,
+   "xy_m": 0.0008,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.1
+  },
+  "case_00": {
+   "slot": 5,
+   "xy_m": 0.001,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.45
+  }
+ },
+ "placed_unscored": [],
+ "final_positions": {
+  "case_00": [
+   1.316,
+   0.0,
+   0.474
+  ],
+  "case_01": [
+   0.951,
+   0.0,
+   0.474
+  ],
+  "case_02": [
+   0.583,
+   0.0,
+   0.474
+  ],
+  "case_03": [
+   0.584,
+   -0.0,
+   0.254
+  ],
+  "case_04": [
+   1.316,
+   0.004,
+   0.254
+  ],
+  "case_05": [
+   0.95,
+   -0.001,
+   0.254
+  ]
+ },
+ "handed_over": 0,
+ "left_on_a": 0,
+ "cases_never_detected": [],
+ "left_on_a_positions": {},
+ "per_pick": [
+  {
+   "case": "case_03",
+   "risk": 0.002,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_05",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_04",
+   "risk": 0.008,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_02",
+   "risk": 0.002,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_01",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_00",
+   "risk": 0.001,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  }
+ ],
+ "start_positions": {
+  "case_00": [
+   -1.387,
+   -0.013,
+   0.254
+  ],
+  "case_01": [
+   -1.023,
+   -0.008,
+   0.254
+  ],
+  "case_02": [
+   -0.594,
+   -0.001,
+   0.254
+  ],
+  "case_03": [
+   -1.497,
+   -0.007,
+   0.474
+  ],
+  "case_04": [
+   -1.027,
+   -0.005,
+   0.474
+  ],
+  "case_05": [
+   -0.662,
+   -0.003,
+   0.474
+  ]
+ },
+ "case_states": {
+  "placed_on_b": 6,
+  "held_by_robot": 0,
+  "handed_over": 0,
+  "outside_cell": 0,
+  "left_in_cell": 0
+ },
+ "placed_quality": {
+  "ok": 6,
+  "ng": 0,
+  "unscored": 0
+ },
+ "case_ledger": {
+  "case_00": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_01": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_02": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_03": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_04": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_05": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  }
+ }
+}

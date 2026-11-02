@@ -1,0 +1,283 @@
+{
+ "seed": 110,
+ "brake": 5.26,
+ "loose": [
+  0,
+  1
+ ],
+ "top_n": 12,
+ "top_moved_or_tilted": 7,
+ "top_median_m": 0.493,
+ "top_max_m": 1.012,
+ "max_tilt_deg": 90.0,
+ "floor_or_fallen": 8,
+ "start": {
+  "case_00": [
+   -1.315,
+   -0.796,
+   0.135
+  ],
+  "case_01": [
+   -0.942,
+   -0.819,
+   0.135
+  ],
+  "case_02": [
+   -0.558,
+   -0.864,
+   0.166
+  ],
+  "case_03": [
+   -1.304,
+   -0.279,
+   0.254
+  ],
+  "case_04": [
+   -0.928,
+   -0.304,
+   0.254
+  ],
+  "case_05": [
+   -0.559,
+   -0.293,
+   0.254
+  ],
+  "case_06": [
+   -1.296,
+   0.005,
+   0.254
+  ],
+  "case_07": [
+   -0.928,
+   -0.019,
+   0.254
+  ],
+  "case_08": [
+   -0.559,
+   -0.002,
+   0.254
+  ],
+  "case_09": [
+   -1.303,
+   0.278,
+   0.254
+  ],
+  "case_10": [
+   -0.927,
+   0.263,
+   0.254
+  ],
+  "case_11": [
+   -0.562,
+   0.272,
+   0.254
+  ],
+  "case_12": [
+   -1.284,
+   -1.376,
+   0.11
+  ],
+  "case_13": [
+   -1.019,
+   -1.133,
+   0.18
+  ],
+  "case_14": [
+   -0.672,
+   -1.122,
+   0.18
+  ],
+  "case_15": [
+   -0.393,
+   -1.136,
+   0.18
+  ],
+  "case_16": [
+   -1.361,
+   -0.601,
+   0.425
+  ],
+  "case_17": [
+   -1.028,
+   -0.38,
+   0.474
+  ],
+  "case_18": [
+   -0.75,
+   -0.373,
+   0.474
+  ],
+  "case_19": [
+   -0.496,
+   -0.677,
+   0.288
+  ],
+  "case_20": [
+   -1.308,
+   0.042,
+   0.474
+  ],
+  "case_21": [
+   -1.026,
+   0.01,
+   0.474
+  ],
+  "case_22": [
+   -0.754,
+   0.011,
+   0.474
+  ],
+  "case_23": [
+   -0.459,
+   0.026,
+   0.474
+  ]
+ },
+ "meets": false,
+ "classes": {
+  "case_00": {
+   "state": "floor",
+   "moved_m": 0.384,
+   "drop_m": 0.119,
+   "tilt_deg": 90.0
+  },
+  "case_01": {
+   "state": "floor",
+   "moved_m": 0.407,
+   "drop_m": 0.119,
+   "tilt_deg": 90.0
+  },
+  "case_02": {
+   "state": "fallen",
+   "moved_m": 0.452,
+   "drop_m": 0.088,
+   "tilt_deg": 68.9
+  },
+  "case_03": {
+   "state": "shifted",
+   "moved_m": 0.142,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_04": {
+   "state": "shifted",
+   "moved_m": 0.168,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_05": {
+   "state": "shifted",
+   "moved_m": 0.158,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_06": {
+   "state": "shifted",
+   "moved_m": 0.134,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_07": {
+   "state": "shifted",
+   "moved_m": 0.158,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_08": {
+   "state": "shifted",
+   "moved_m": 0.142,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_09": {
+   "state": "shifted",
+   "moved_m": 0.135,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_10": {
+   "state": "shifted",
+   "moved_m": 0.151,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_11": {
+   "state": "shifted",
+   "moved_m": 0.142,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_12": {
+   "state": "floor",
+   "moved_m": 1.012,
+   "drop_m": 0.364,
+   "tilt_deg": 0.0
+  },
+  "case_13": {
+   "state": "fallen",
+   "moved_m": 0.77,
+   "drop_m": 0.294,
+   "tilt_deg": 90.0
+  },
+  "case_14": {
+   "state": "fallen",
+   "moved_m": 0.768,
+   "drop_m": 0.294,
+   "tilt_deg": 90.0
+  },
+  "case_15": {
+   "state": "fallen",
+   "moved_m": 0.783,
+   "drop_m": 0.294,
+   "tilt_deg": 90.0
+  },
+  "case_16": {
+   "state": "tilted",
+   "moved_m": 0.601,
+   "drop_m": 0.049,
+   "tilt_deg": 15.5
+  },
+  "case_17": {
+   "state": "shifted",
+   "moved_m": 0.385,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_18": {
+   "state": "shifted",
+   "moved_m": 0.378,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_19": {
+   "state": "fallen",
+   "moved_m": 0.678,
+   "drop_m": 0.186,
+   "tilt_deg": 68.9
+  },
+  "case_20": {
+   "state": "shifted",
+   "moved_m": 0.33,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_21": {
+   "state": "shifted",
+   "moved_m": 0.362,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_22": {
+   "state": "shifted",
+   "moved_m": 0.361,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_23": {
+   "state": "shifted",
+   "moved_m": 0.349,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  }
+ }
+}

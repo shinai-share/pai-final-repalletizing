@@ -1,0 +1,22 @@
+{
+ "stage": "S3",
+ "runs": 1,
+ "passed": 0,
+ "gate_passed": false,
+ "rows": [
+  {
+   "run": "shinai_learned_seed118",
+   "passed": false,
+   "why": [
+    "終わり方 interrupted",
+    "置いた後に基準の外にある 1 個"
+   ],
+   "placed_on_b": 11,
+   "handed_over": 0,
+   "status": "interrupted",
+   "placement_xy_err_max_mm": 155.4,
+   "secondary_collapses": 0,
+   "sim_seconds": 531.31
+  }
+ ]
+}

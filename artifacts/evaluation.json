@@ -1,0 +1,670 @@
+{
+  "summary": {
+    "normal": {
+      "runs": 10,
+      "completed": 10,
+      "safe_aborts": 0,
+      "collisions": 0,
+      "max_control_p95_ms": 0.23908001603558657,
+      "mean_sim_seconds": 58.22499999998329
+    },
+    "blocked": {
+      "runs": 10,
+      "completed": 10,
+      "safe_aborts": 0,
+      "collisions": 0,
+      "max_control_p95_ms": 0.2969499910250306,
+      "mean_sim_seconds": 75.33999999996773
+    },
+    "sensor_dropout": {
+      "runs": 10,
+      "completed": 10,
+      "safe_aborts": 0,
+      "collisions": 0,
+      "max_control_p95_ms": 0.26651998923625825,
+      "mean_sim_seconds": 59.47499999998215
+    },
+    "combined": {
+      "runs": 10,
+      "completed": 10,
+      "safe_aborts": 0,
+      "collisions": 0,
+      "max_control_p95_ms": 0.2635999946505757,
+      "mean_sim_seconds": 76.59499999996659
+    },
+    "no_route": {
+      "runs": 10,
+      "completed": 0,
+      "safe_aborts": 10,
+      "collisions": 0,
+      "max_control_p95_ms": 0.724500001524575,
+      "mean_sim_seconds": 17.549999999999752
+    }
+  },
+  "runs": [
+    {
+      "scenario": "normal",
+      "seed": 50,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.39999999998313,
+      "control_latency_ms_p95": 0.23613000375917179,
+      "final_speed": 6.663649367172436e-17
+    },
+    {
+      "scenario": "normal",
+      "seed": 51,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.14999999998336,
+      "control_latency_ms_p95": 0.2280799904838204,
+      "final_speed": 3.62911243694077e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 52,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.04999999998345,
+      "control_latency_ms_p95": 0.235399988014251,
+      "final_speed": 1.6668608944208406e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 53,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.349999999983176,
+      "control_latency_ms_p95": 0.23759999603498727,
+      "final_speed": 7.254862743532958e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 54,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.14999999998336,
+      "control_latency_ms_p95": 0.23908001603558657,
+      "final_speed": 5.427104955951492e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 55,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.0999999999834,
+      "control_latency_ms_p95": 0.2320600207895042,
+      "final_speed": 4.54090638486455e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 56,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.449999999983085,
+      "control_latency_ms_p95": 0.22621998796239476,
+      "final_speed": 2.467034737155027e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 57,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.39999999998313,
+      "control_latency_ms_p95": 0.2380600082688033,
+      "final_speed": 3.7708980286407643e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 58,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.14999999998336,
+      "control_latency_ms_p95": 0.23074001073837244,
+      "final_speed": 1.779849374264033e-16
+    },
+    {
+      "scenario": "normal",
+      "seed": 59,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 58.04999999998345,
+      "control_latency_ms_p95": 0.23079998209141195,
+      "final_speed": 2.420840047057004e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 50,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 7,
+      "sim_seconds": 75.64999999996745,
+      "control_latency_ms_p95": 0.25028001400642097,
+      "final_speed": 2.753335278337549e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 51,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 8,
+      "sim_seconds": 75.09999999996795,
+      "control_latency_ms_p95": 0.26829500566236675,
+      "final_speed": 2.494479660617815e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 52,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 9,
+      "sim_seconds": 75.24999999996781,
+      "control_latency_ms_p95": 0.24660000926814968,
+      "final_speed": 4.612962741245996e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 53,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 8,
+      "sim_seconds": 75.39999999996768,
+      "control_latency_ms_p95": 0.2549899916630238,
+      "final_speed": 4.701692932393124e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 54,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 11,
+      "sim_seconds": 75.1499999999679,
+      "control_latency_ms_p95": 0.2628499962156638,
+      "final_speed": 5.469297157580118e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 55,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 7,
+      "sim_seconds": 75.24999999996781,
+      "control_latency_ms_p95": 0.25234000058844686,
+      "final_speed": 4.574605562046921e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 56,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 12,
+      "sim_seconds": 75.64999999996745,
+      "control_latency_ms_p95": 0.25404000189155335,
+      "final_speed": 3.735817564025512e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 57,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 11,
+      "sim_seconds": 75.64999999996745,
+      "control_latency_ms_p95": 0.2705800114199518,
+      "final_speed": 6.491189961085121e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 58,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 11,
+      "sim_seconds": 75.29999999996777,
+      "control_latency_ms_p95": 0.2969499910250306,
+      "final_speed": 7.733022606752378e-16
+    },
+    {
+      "scenario": "blocked",
+      "seed": 59,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 74.99999999996804,
+      "control_latency_ms_p95": 0.2574200087110511,
+      "final_speed": 2.442356013334451e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 50,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.69999999998195,
+      "control_latency_ms_p95": 0.24571000831201667,
+      "final_speed": 2.528946067471998e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 51,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.39999999998222,
+      "control_latency_ms_p95": 0.24173000711016354,
+      "final_speed": 4.6987955436898e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 52,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.449999999982175,
+      "control_latency_ms_p95": 0.2393200062215328,
+      "final_speed": 2.235599378232127e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 53,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.64999999998199,
+      "control_latency_ms_p95": 0.24779999512247727,
+      "final_speed": 6.672795462308839e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 54,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.449999999982175,
+      "control_latency_ms_p95": 0.2506400167476385,
+      "final_speed": 4.825988016677486e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 55,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.24999999998236,
+      "control_latency_ms_p95": 0.2525600022636354,
+      "final_speed": 4.560169016353692e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 56,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.79999999998186,
+      "control_latency_ms_p95": 0.24552500690333545,
+      "final_speed": 2.6132214463390265e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 57,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.49999999998213,
+      "control_latency_ms_p95": 0.2575149948825128,
+      "final_speed": 4.7136763977828167e-17
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 58,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.349999999982266,
+      "control_latency_ms_p95": 0.26651998923625825,
+      "final_speed": 3.022274496260747e-16
+    },
+    {
+      "scenario": "sensor_dropout",
+      "seed": 59,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 0,
+      "sim_seconds": 59.1999999999824,
+      "control_latency_ms_p95": 0.2621099920361302,
+      "final_speed": 1.4437713487615174e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 50,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 8,
+      "sim_seconds": 76.84999999996636,
+      "control_latency_ms_p95": 0.24813999771140516,
+      "final_speed": 7.915997924950859e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 51,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 8,
+      "sim_seconds": 76.34999999996681,
+      "control_latency_ms_p95": 0.25853998959064484,
+      "final_speed": 5.369115347817065e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 52,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 76.54999999996663,
+      "control_latency_ms_p95": 0.2530000056140125,
+      "final_speed": 1.5331047455467526e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 53,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 9,
+      "sim_seconds": 76.64999999996654,
+      "control_latency_ms_p95": 0.2562400011811403,
+      "final_speed": 7.086420182476715e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 54,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 76.39999999996677,
+      "control_latency_ms_p95": 0.25855998974293465,
+      "final_speed": 5.431772310117946e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 55,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 7,
+      "sim_seconds": 76.49999999996668,
+      "control_latency_ms_p95": 0.24805501016089693,
+      "final_speed": 4.385455486502252e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 56,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 12,
+      "sim_seconds": 76.89999999996631,
+      "control_latency_ms_p95": 0.2635999946505757,
+      "final_speed": 6.538383110749101e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 57,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 11,
+      "sim_seconds": 76.7999999999664,
+      "control_latency_ms_p95": 0.2609000002848916,
+      "final_speed": 6.500574945639102e-17
+    },
+    {
+      "scenario": "combined",
+      "seed": 58,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 76.64999999996654,
+      "control_latency_ms_p95": 0.2616800018586217,
+      "final_speed": 1.9085991623079156e-16
+    },
+    {
+      "scenario": "combined",
+      "seed": 59,
+      "completed": true,
+      "state": "COMPLETE",
+      "collisions": 0,
+      "replans": 9,
+      "sim_seconds": 76.29999999996686,
+      "control_latency_ms_p95": 0.24149999808287248,
+      "final_speed": 3.2375096147809396e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 50,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 8,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7103999814717099,
+      "final_speed": 2.955843461270809e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 51,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 9,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7059499912429601,
+      "final_speed": 2.0039738255253048e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 52,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 9,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7173499907366931,
+      "final_speed": 1.4084101323500927e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 53,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7207999879028648,
+      "final_speed": 5.342776754502241e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 54,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.724500001524575,
+      "final_speed": 5.725204015416345e-17
+    },
+    {
+      "scenario": "no_route",
+      "seed": 55,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 8,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7044999947538599,
+      "final_speed": 3.236195494537222e-17
+    },
+    {
+      "scenario": "no_route",
+      "seed": 56,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.717250004527159,
+      "final_speed": 6.657768882363475e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 57,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 9,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7135499909054488,
+      "final_speed": 3.788042281088079e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 58,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 10,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7183499983511865,
+      "final_speed": 2.9389048828385025e-16
+    },
+    {
+      "scenario": "no_route",
+      "seed": 59,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "replans": 9,
+      "sim_seconds": 17.549999999999752,
+      "control_latency_ms_p95": 0.7094500033417717,
+      "final_speed": 1.4649701464917145e-16
+    }
+  ],
+  "ablation_without_replanning": [
+    {
+      "seed": 50,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.849999999999188
+    },
+    {
+      "seed": 51,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.949999999999168
+    },
+    {
+      "seed": 52,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.999999999999158
+    },
+    {
+      "seed": 53,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.999999999999158
+    },
+    {
+      "seed": 54,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.999999999999158
+    },
+    {
+      "seed": 55,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.849999999999188
+    },
+    {
+      "seed": 56,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 15.049999999999148
+    },
+    {
+      "seed": 57,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.949999999999168
+    },
+    {
+      "seed": 58,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.849999999999188
+    },
+    {
+      "seed": 59,
+      "completed": false,
+      "state": "ABORTED",
+      "collisions": 0,
+      "sim_seconds": 14.849999999999188
+    }
+  ],
+  "variations": "mass/damping +/-20%, gate onset 1.5-3.0s, camera lighting/noise/occlusion; fixed topology",
+  "scope": "No real-world generalization claim. Safe abort is expected for no_route."
+}

@@ -1,0 +1,6 @@
+# Isaac Sim runtime (Windows 11, Python 3.12, NVIDIA driver >= 595.97). Install order matters:
+#   py -3.12 -m venv .venv-isaac
+#   .venv-isaac\Scripts\python -m pip install torch==2.11.0 torchvision==0.26.0 --index-url https://download.pytorch.org/whl/cu128
+#   .venv-isaac\Scripts\python -m pip install -r requirements-sim.txt --extra-index-url https://pypi.nvidia.com
+# Isaac Sim asks to accept the NVIDIA Omniverse EULA on first start (OMNI_KIT_ACCEPT_EULA=YES).
+isaacsim[all,extscache]==6.2.0.0

@@ -1,0 +1,12 @@
+{
+  "isaacsim": "6.2.0.0",
+  "boot_seconds": 46.4,
+  "physics_steps_per_second": 1662.6,
+  "render_fps": 218.3,
+  "box_rest_height_m": 0.15,
+  "box_settled": true,
+  "gpu": {
+    "used_mib": 2674,
+    "total_mib": 16303
+  }
+}

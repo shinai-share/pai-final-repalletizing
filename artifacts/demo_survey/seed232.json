@@ -1,0 +1,85 @@
+{
+ "seed": 232,
+ "brake": 4.44,
+ "loose": [
+  0,
+  1
+ ],
+ "top_n": 3,
+ "top_moved_or_tilted": 3,
+ "top_median_m": 0.096,
+ "top_max_m": 0.15,
+ "max_tilt_deg": 0.0,
+ "floor_or_fallen": 0,
+ "start": {
+  "case_00": [
+   -1.405,
+   0.009,
+   0.254
+  ],
+  "case_01": [
+   -0.982,
+   0.013,
+   0.254
+  ],
+  "case_02": [
+   -0.602,
+   0.008,
+   0.254
+  ],
+  "case_03": [
+   -1.466,
+   0.015,
+   0.474
+  ],
+  "case_04": [
+   -1.034,
+   0.016,
+   0.474
+  ],
+  "case_05": [
+   -0.67,
+   0.041,
+   0.474
+  ]
+ },
+ "meets": true,
+ "classes": {
+  "case_00": {
+   "state": "shifted",
+   "moved_m": 0.089,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_01": {
+   "state": "shifted",
+   "moved_m": 0.034,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_02": {
+   "state": "intact",
+   "moved_m": 0.02,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_03": {
+   "state": "shifted",
+   "moved_m": 0.15,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_04": {
+   "state": "shifted",
+   "moved_m": 0.086,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_05": {
+   "state": "shifted",
+   "moved_m": 0.096,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  }
+ }
+}

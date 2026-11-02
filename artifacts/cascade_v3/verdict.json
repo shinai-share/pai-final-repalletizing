@@ -1,0 +1,23 @@
+{
+ "passed": true,
+ "criteria": {
+  "auc_margin": 0.1,
+  "brier": "no higher"
+ },
+ "sets": {
+  "seen": {
+   "passed": true,
+   "auc_learned": 0.9747655594646367,
+   "auc_rule": 0.5890498428716305,
+   "brier_learned": 0.01179847708695916,
+   "brier_rule": 0.04108249103358331
+  },
+  "unseen": {
+   "passed": true,
+   "auc_learned": 0.9373880437111635,
+   "auc_rule": 0.5661902721234198,
+   "brier_learned": 0.013888517204442903,
+   "brier_rule": 0.029788126704426265
+  }
+ }
+}

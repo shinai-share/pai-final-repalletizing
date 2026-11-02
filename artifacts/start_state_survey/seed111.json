@@ -1,0 +1,282 @@
+{
+ "seed": 111,
+ "brake": 5.8,
+ "loose": [
+  1
+ ],
+ "top_n": 12,
+ "top_moved_or_tilted": 6,
+ "top_median_m": 0.451,
+ "top_max_m": 0.816,
+ "max_tilt_deg": 90.0,
+ "floor_or_fallen": 6,
+ "start": {
+  "case_00": [
+   -1.317,
+   -0.413,
+   0.254
+  ],
+  "case_01": [
+   -0.95,
+   -0.412,
+   0.254
+  ],
+  "case_02": [
+   -0.583,
+   -0.412,
+   0.254
+  ],
+  "case_03": [
+   -1.317,
+   -0.138,
+   0.254
+  ],
+  "case_04": [
+   -0.95,
+   -0.137,
+   0.254
+  ],
+  "case_05": [
+   -0.583,
+   -0.137,
+   0.254
+  ],
+  "case_06": [
+   -1.317,
+   0.137,
+   0.254
+  ],
+  "case_07": [
+   -0.95,
+   0.138,
+   0.254
+  ],
+  "case_08": [
+   -0.583,
+   0.137,
+   0.254
+  ],
+  "case_09": [
+   -1.317,
+   0.413,
+   0.254
+  ],
+  "case_10": [
+   -0.95,
+   0.413,
+   0.254
+  ],
+  "case_11": [
+   -0.583,
+   0.412,
+   0.254
+  ],
+  "case_12": [
+   -1.272,
+   -0.39,
+   0.474
+  ],
+  "case_13": [
+   -0.898,
+   -0.397,
+   0.474
+  ],
+  "case_14": [
+   -0.006,
+   -0.487,
+   0.135
+  ],
+  "case_15": [
+   0.254,
+   -0.494,
+   0.135
+  ],
+  "case_16": [
+   -1.265,
+   -0.017,
+   0.474
+  ],
+  "case_17": [
+   -0.898,
+   -0.034,
+   0.474
+  ],
+  "case_18": [
+   -0.115,
+   0.131,
+   0.135
+  ],
+  "case_19": [
+   0.201,
+   -0.017,
+   0.135
+  ],
+  "case_20": [
+   -1.263,
+   0.357,
+   0.474
+  ],
+  "case_21": [
+   -0.901,
+   0.329,
+   0.474
+  ],
+  "case_22": [
+   -0.079,
+   0.515,
+   0.135
+  ],
+  "case_23": [
+   0.2,
+   0.375,
+   0.11
+  ]
+ },
+ "meets": false,
+ "classes": {
+  "case_00": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_01": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_02": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_03": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_04": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_05": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_06": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_07": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_08": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_09": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_10": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_11": {
+   "state": "intact",
+   "moved_m": 0.0,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_12": {
+   "state": "shifted",
+   "moved_m": 0.093,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_13": {
+   "state": "shifted",
+   "moved_m": 0.192,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_14": {
+   "state": "floor",
+   "moved_m": 0.816,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_15": {
+   "state": "floor",
+   "moved_m": 0.802,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_16": {
+   "state": "shifted",
+   "moved_m": 0.099,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_17": {
+   "state": "shifted",
+   "moved_m": 0.192,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_18": {
+   "state": "floor",
+   "moved_m": 0.71,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_19": {
+   "state": "floor",
+   "moved_m": 0.739,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_20": {
+   "state": "shifted",
+   "moved_m": 0.099,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_21": {
+   "state": "shifted",
+   "moved_m": 0.19,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_22": {
+   "state": "floor",
+   "moved_m": 0.749,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_23": {
+   "state": "floor",
+   "moved_m": 0.737,
+   "drop_m": 0.364,
+   "tilt_deg": 0.0
+  }
+ }
+}

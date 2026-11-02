@@ -1,0 +1,283 @@
+{
+ "seed": 109,
+ "brake": 4.66,
+ "loose": [
+  0,
+  1
+ ],
+ "top_n": 12,
+ "top_moved_or_tilted": 9,
+ "top_median_m": 0.194,
+ "top_max_m": 0.89,
+ "max_tilt_deg": 90.0,
+ "floor_or_fallen": 3,
+ "start": {
+  "case_00": [
+   -1.342,
+   -0.41,
+   0.254
+  ],
+  "case_01": [
+   -0.98,
+   -0.41,
+   0.254
+  ],
+  "case_02": [
+   -0.614,
+   -0.41,
+   0.254
+  ],
+  "case_03": [
+   -1.343,
+   -0.134,
+   0.254
+  ],
+  "case_04": [
+   -0.982,
+   -0.133,
+   0.254
+  ],
+  "case_05": [
+   -0.612,
+   -0.132,
+   0.254
+  ],
+  "case_06": [
+   -1.338,
+   0.139,
+   0.254
+  ],
+  "case_07": [
+   -0.977,
+   0.14,
+   0.254
+  ],
+  "case_08": [
+   -0.607,
+   0.141,
+   0.254
+  ],
+  "case_09": [
+   -1.336,
+   0.414,
+   0.254
+  ],
+  "case_10": [
+   -0.974,
+   0.416,
+   0.254
+  ],
+  "case_11": [
+   -0.608,
+   0.416,
+   0.254
+  ],
+  "case_12": [
+   -2.231,
+   -0.561,
+   0.135
+  ],
+  "case_13": [
+   -1.29,
+   -0.362,
+   0.474
+  ],
+  "case_14": [
+   -1.009,
+   -0.358,
+   0.474
+  ],
+  "case_15": [
+   -0.673,
+   -0.347,
+   0.474
+  ],
+  "case_16": [
+   -1.832,
+   -0.007,
+   0.135
+  ],
+  "case_17": [
+   -1.286,
+   0.009,
+   0.474
+  ],
+  "case_18": [
+   -0.999,
+   0.015,
+   0.474
+  ],
+  "case_19": [
+   -0.662,
+   0.02,
+   0.474
+  ],
+  "case_20": [
+   -1.709,
+   0.356,
+   0.135
+  ],
+  "case_21": [
+   -1.274,
+   0.388,
+   0.474
+  ],
+  "case_22": [
+   -1.002,
+   0.388,
+   0.474
+  ],
+  "case_23": [
+   -0.658,
+   0.397,
+   0.474
+  ]
+ },
+ "meets": false,
+ "classes": {
+  "case_00": {
+   "state": "intact",
+   "moved_m": 0.025,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_01": {
+   "state": "shifted",
+   "moved_m": 0.03,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_02": {
+   "state": "shifted",
+   "moved_m": 0.031,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_03": {
+   "state": "intact",
+   "moved_m": 0.027,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_04": {
+   "state": "shifted",
+   "moved_m": 0.032,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_05": {
+   "state": "intact",
+   "moved_m": 0.029,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_06": {
+   "state": "intact",
+   "moved_m": 0.022,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_07": {
+   "state": "intact",
+   "moved_m": 0.027,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_08": {
+   "state": "intact",
+   "moved_m": 0.024,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_09": {
+   "state": "intact",
+   "moved_m": 0.02,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_10": {
+   "state": "intact",
+   "moved_m": 0.024,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_11": {
+   "state": "intact",
+   "moved_m": 0.025,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_12": {
+   "state": "floor",
+   "moved_m": 0.89,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_13": {
+   "state": "shifted",
+   "moved_m": 0.203,
+   "drop_m": -0.0,
+   "tilt_deg": 0.0
+  },
+  "case_14": {
+   "state": "shifted",
+   "moved_m": 0.197,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_15": {
+   "state": "shifted",
+   "moved_m": 0.137,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_16": {
+   "state": "floor",
+   "moved_m": 0.47,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_17": {
+   "state": "shifted",
+   "moved_m": 0.199,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_18": {
+   "state": "shifted",
+   "moved_m": 0.187,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_19": {
+   "state": "shifted",
+   "moved_m": 0.127,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_20": {
+   "state": "floor",
+   "moved_m": 0.347,
+   "drop_m": 0.339,
+   "tilt_deg": 90.0
+  },
+  "case_21": {
+   "state": "shifted",
+   "moved_m": 0.188,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_22": {
+   "state": "shifted",
+   "moved_m": 0.191,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  },
+  "case_23": {
+   "state": "shifted",
+   "moved_m": 0.124,
+   "drop_m": 0.0,
+   "tilt_deg": 0.0
+  }
+ }
+}

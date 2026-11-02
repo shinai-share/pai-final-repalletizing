@@ -1,0 +1,849 @@
+{
+ "seed": 118,
+ "policy": "shinai_learned",
+ "sku": "BEV-500x24",
+ "status": "interrupted",
+ "max_picks": null,
+ "sim_seconds": 531.31,
+ "wall_seconds": 1143.7,
+ "observations": 13,
+ "side_observations": 0,
+ "safety_stops": 0,
+ "grip_failures": 0,
+ "fallback_picks": 0,
+ "learned_decisions": 12,
+ "learned_changed": 4,
+ "remaining": {
+  "case_00": "未処理",
+  "case_01": "未処理",
+  "case_02": "未処理",
+  "case_03": "未処理",
+  "case_04": "未処理",
+  "case_05": "未処理",
+  "case_06": "未処理",
+  "case_07": "未処理",
+  "case_08": "未処理",
+  "case_09": "未処理",
+  "case_10": "未処理",
+  "case_11": "未処理",
+  "case_22": "未処理"
+ },
+ "unseen_outside_reach": [
+  {
+   "x": -2.25,
+   "y": -1.25,
+   "size_m": 0.5
+  },
+  {
+   "x": -2.25,
+   "y": -0.75,
+   "size_m": 0.5
+  },
+  {
+   "x": -2.25,
+   "y": -0.25,
+   "size_m": 0.5
+  },
+  {
+   "x": -2.25,
+   "y": 0.25,
+   "size_m": 0.5
+  },
+  {
+   "x": -2.25,
+   "y": 0.75,
+   "size_m": 0.5
+  },
+  {
+   "x": -2.25,
+   "y": 1.25,
+   "size_m": 0.5
+  }
+ ],
+ "not_found": 0,
+ "transport": {
+  "transport_s": 3.008,
+  "settled_after_s": 0.0
+ },
+ "brake_decel": 4.25,
+ "loose_layers": [
+  1
+ ],
+ "picks": 11,
+ "secondary_collapses": 0,
+ "disturbed_cases": 0,
+ "placed_cases_pushed": [],
+ "picks_with_disturbance": 0,
+ "drops_in_transit": 0,
+ "prediction": {
+  "true_positive": 0,
+  "missed": 0,
+  "false_alarm": 0
+ },
+ "placed_on_b": 11,
+ "placement_xy_err_max_m": 0.1554,
+ "placement_yaw_max_deg": 1.13,
+ "placement_tilt_max_deg": 90.0,
+ "placement_errors": {
+  "case_12": {
+   "slot": 0,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.03
+  },
+  "case_15": {
+   "slot": 1,
+   "xy_m": 0.0004,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.39
+  },
+  "case_14": {
+   "slot": 2,
+   "xy_m": 0.0051,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.57
+  },
+  "case_13": {
+   "slot": 3,
+   "xy_m": 0.0007,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.08
+  },
+  "case_20": {
+   "slot": 4,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.3
+  },
+  "case_16": {
+   "slot": 5,
+   "xy_m": 0.1554,
+   "z_m": 0.025,
+   "tilt_deg": 90.0,
+   "yaw_deg": 1.13
+  },
+  "case_17": {
+   "slot": 6,
+   "xy_m": 0.0008,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.35
+  },
+  "case_19": {
+   "slot": 7,
+   "xy_m": 0.0,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.53
+  },
+  "case_18": {
+   "slot": 9,
+   "xy_m": 0.0013,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.1
+  },
+  "case_21": {
+   "slot": 10,
+   "xy_m": 0.0003,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.48
+  },
+  "case_23": {
+   "slot": 11,
+   "xy_m": 0.0005,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.41
+  }
+ },
+ "placed_unscored": [],
+ "final_positions": {
+  "case_00": [
+   -1.317,
+   -0.412,
+   0.254
+  ],
+  "case_01": [
+   -0.95,
+   -0.413,
+   0.254
+  ],
+  "case_02": [
+   -0.583,
+   -0.412,
+   0.254
+  ],
+  "case_03": [
+   -1.317,
+   -0.138,
+   0.254
+  ],
+  "case_04": [
+   -0.95,
+   -0.138,
+   0.254
+  ],
+  "case_05": [
+   -0.583,
+   -0.137,
+   0.254
+  ],
+  "case_06": [
+   -1.317,
+   0.138,
+   0.254
+  ],
+  "case_07": [
+   -0.95,
+   0.137,
+   0.254
+  ],
+  "case_08": [
+   -0.583,
+   0.137,
+   0.254
+  ],
+  "case_09": [
+   -1.317,
+   0.413,
+   0.254
+  ],
+  "case_10": [
+   -0.95,
+   0.413,
+   0.254
+  ],
+  "case_11": [
+   -0.583,
+   0.412,
+   0.254
+  ],
+  "case_12": [
+   0.583,
+   -0.413,
+   0.254
+  ],
+  "case_13": [
+   0.583,
+   -0.138,
+   0.254
+  ],
+  "case_14": [
+   1.318,
+   -0.408,
+   0.254
+  ],
+  "case_15": [
+   0.95,
+   -0.413,
+   0.254
+  ],
+  "case_16": [
+   1.323,
+   0.018,
+   0.279
+  ],
+  "case_17": [
+   0.583,
+   0.137,
+   0.254
+  ],
+  "case_18": [
+   0.585,
+   0.413,
+   0.254
+  ],
+  "case_19": [
+   0.95,
+   0.137,
+   0.254
+  ],
+  "case_20": [
+   0.95,
+   -0.137,
+   0.254
+  ],
+  "case_21": [
+   0.95,
+   0.413,
+   0.254
+  ],
+  "case_22": [
+   0.0,
+   0.0,
+   1.489
+  ],
+  "case_23": [
+   1.317,
+   0.412,
+   0.254
+  ]
+ },
+ "handed_over": 0,
+ "left_on_a": 13,
+ "cases_never_detected": [],
+ "left_on_a_positions": {
+  "case_00": [
+   -1.317,
+   -0.412,
+   0.254
+  ],
+  "case_01": [
+   -0.95,
+   -0.413,
+   0.254
+  ],
+  "case_02": [
+   -0.583,
+   -0.412,
+   0.254
+  ],
+  "case_03": [
+   -1.317,
+   -0.138,
+   0.254
+  ],
+  "case_04": [
+   -0.95,
+   -0.138,
+   0.254
+  ],
+  "case_05": [
+   -0.583,
+   -0.137,
+   0.254
+  ],
+  "case_06": [
+   -1.317,
+   0.138,
+   0.254
+  ],
+  "case_07": [
+   -0.95,
+   0.137,
+   0.254
+  ],
+  "case_08": [
+   -0.583,
+   0.137,
+   0.254
+  ],
+  "case_09": [
+   -1.317,
+   0.413,
+   0.254
+  ],
+  "case_10": [
+   -0.95,
+   0.413,
+   0.254
+  ],
+  "case_11": [
+   -0.583,
+   0.412,
+   0.254
+  ],
+  "case_22": [
+   0.0,
+   0.0,
+   1.489
+  ]
+ },
+ "per_pick": [
+  {
+   "case": "case_12",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_15",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_14",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_13",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_20",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_16",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_17",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_19",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_18",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_21",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_23",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  }
+ ],
+ "start_positions": {
+  "case_00": [
+   -1.317,
+   -0.413,
+   0.254
+  ],
+  "case_01": [
+   -0.95,
+   -0.412,
+   0.254
+  ],
+  "case_02": [
+   -0.583,
+   -0.412,
+   0.254
+  ],
+  "case_03": [
+   -1.317,
+   -0.138,
+   0.254
+  ],
+  "case_04": [
+   -0.95,
+   -0.137,
+   0.254
+  ],
+  "case_05": [
+   -0.583,
+   -0.137,
+   0.254
+  ],
+  "case_06": [
+   -1.317,
+   0.138,
+   0.254
+  ],
+  "case_07": [
+   -0.95,
+   0.138,
+   0.254
+  ],
+  "case_08": [
+   -0.583,
+   0.138,
+   0.254
+  ],
+  "case_09": [
+   -1.317,
+   0.413,
+   0.254
+  ],
+  "case_10": [
+   -0.95,
+   0.413,
+   0.254
+  ],
+  "case_11": [
+   -0.583,
+   0.413,
+   0.254
+  ],
+  "case_12": [
+   -1.377,
+   -0.485,
+   0.474
+  ],
+  "case_13": [
+   -1.089,
+   -0.46,
+   0.474
+  ],
+  "case_14": [
+   -0.818,
+   -0.467,
+   0.474
+  ],
+  "case_15": [
+   -0.521,
+   -0.474,
+   0.474
+  ],
+  "case_16": [
+   -1.367,
+   -0.089,
+   0.474
+  ],
+  "case_17": [
+   -1.078,
+   -0.092,
+   0.474
+  ],
+  "case_18": [
+   -0.806,
+   -0.094,
+   0.474
+  ],
+  "case_19": [
+   -0.526,
+   -0.096,
+   0.474
+  ],
+  "case_20": [
+   -1.366,
+   0.273,
+   0.474
+  ],
+  "case_21": [
+   -1.087,
+   0.286,
+   0.474
+  ],
+  "case_22": [
+   -0.813,
+   0.282,
+   0.474
+  ],
+  "case_23": [
+   -0.538,
+   0.282,
+   0.474
+  ]
+ },
+ "case_states": {
+  "placed_on_b": 11,
+  "held_by_robot": 1,
+  "handed_over": 0,
+  "outside_cell": 0,
+  "left_in_cell": 12
+ },
+ "placed_quality": {
+  "ok": 10,
+  "ng": 1,
+  "unscored": 0
+ },
+ "case_ledger": {
+  "case_00": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_01": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_02": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_03": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_04": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_05": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_06": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_07": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_08": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_09": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_10": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_11": {
+   "state": "left_in_cell",
+   "detail": "未処理",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": {
+    "off_pallet_a": false,
+    "outside_work_area": false,
+    "seen_by_robot": true
+   }
+  },
+  "case_12": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_13": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_14": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_15": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_16": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ng",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_17": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_18": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_19": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_20": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_21": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_22": {
+   "state": "held_by_robot",
+   "detail": "ケースを持ったまま人の対応を待つ",
+   "quality": null,
+   "left_pallet": null,
+   "detected": true,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_23": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  }
+ }
+}

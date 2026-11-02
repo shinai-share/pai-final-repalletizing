@@ -1,0 +1,114 @@
+{
+ "stage": "S3",
+ "runs": 8,
+ "passed": 0,
+ "gate_passed": false,
+ "rows": [
+  {
+   "run": "shinai_learned_seed3000",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved",
+    "置いた後に基準の外にある 3 個"
+   ],
+   "placed_on_b": 20,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 7.9,
+   "secondary_collapses": 0,
+   "sim_seconds": 1154.44
+  },
+  {
+   "run": "shinai_learned_seed3001",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved"
+   ],
+   "placed_on_b": 30,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 9.0,
+   "secondary_collapses": 0,
+   "sim_seconds": 1482.52
+  },
+  {
+   "run": "shinai_learned_seed3014",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved"
+   ],
+   "placed_on_b": 15,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 5.3,
+   "secondary_collapses": 0,
+   "sim_seconds": 722.67
+  },
+  {
+   "run": "shinai_learned_seed3025",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved"
+   ],
+   "placed_on_b": 22,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 3.5,
+   "secondary_collapses": 0,
+   "sim_seconds": 1243.37
+  },
+  {
+   "run": "shinai_seed3000",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved",
+    "置いた後に基準の外にある 3 個"
+   ],
+   "placed_on_b": 20,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 4.2,
+   "secondary_collapses": 0,
+   "sim_seconds": 1011.89
+  },
+  {
+   "run": "shinai_seed3001",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved"
+   ],
+   "placed_on_b": 30,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 8.1,
+   "secondary_collapses": 0,
+   "sim_seconds": 1408.78
+  },
+  {
+   "run": "shinai_seed3014",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved"
+   ],
+   "placed_on_b": 15,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 5.6,
+   "secondary_collapses": 0,
+   "sim_seconds": 726.68
+  },
+  {
+   "run": "shinai_seed3025",
+   "passed": false,
+   "why": [
+    "終わり方 unresolved"
+   ],
+   "placed_on_b": 22,
+   "handed_over": 0,
+   "status": "unresolved",
+   "placement_xy_err_max_mm": 5.2,
+   "secondary_collapses": 0,
+   "sim_seconds": 1206.9
+  }
+ ]
+}

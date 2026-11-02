@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>荷崩れパレットの自律積み替え</title>
+<style>
+@page{ size:13.333in 7.5in; margin:0; }
+
+  :root{
+    --ground:#FFFFFF;
+    --ink:#1A1A1A;
+    --navy:#1F3864;
+    --mid:#5C5C5C;
+    --faint:#8C8C8C;
+    --line:#DCDCDC;
+    --panel:#FAFAFA;
+    --accent:#E39A2E;
+    --gothic:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+    --s:1;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html,body{background:#F2F2F2;}
+  body{
+    font-family:var(--gothic); color:var(--ink);
+    -webkit-font-smoothing:antialiased; text-rendering:geometricPrecision;
+    font-feature-settings:"palt" 1;
+    -webkit-print-color-adjust:exact; print-color-adjust:exact;
+    padding:24px 16px 48px;
+  }
+  .deck{max-width:1280px;margin:0 auto;display:flex;flex-direction:column;gap:20px;}
+  .stage{width:100%;overflow:hidden;}
+  .slide{
+    width:1280px;height:720px;background:var(--ground);
+    padding:52px 64px 78px;position:relative;
+    transform:scale(var(--s));transform-origin:top left;
+    display:flex;flex-direction:column;
+    box-shadow:0 1px 3px rgba(0,0,0,.10);
+  }
+
+  /* 見出し */
+  h1{font-size:56px;font-weight:700;line-height:1.28;letter-spacing:.01em;}
+  h2{font-size:44px;font-weight:700;line-height:1.3;letter-spacing:.01em;}
+  .titlerule{height:3px;background:var(--ink);margin-top:12px;}
+  /* 表紙以外は罫線を紙面の両端まで通す */
+  .head .titlerule{margin-left:-64px;margin-right:-64px;}
+  .head{margin-bottom:16px;}
+  .sub{font-size:15.5px;color:var(--mid);margin-top:10px;line-height:1.7;}
+
+  .content{flex:1;display:flex;flex-direction:column;justify-content:center;gap:22px;min-height:0;}
+  .lede{font-size:16px;line-height:1.85;color:var(--mid);}
+  .body{font-size:15px;line-height:1.85;}
+  .small{font-size:12.5px;line-height:1.75;color:var(--mid);}
+  strong{font-weight:700;}
+  .center{text-align:center;}
+
+  /* カード */
+  .card{
+    border:1.5px solid var(--navy);border-radius:10px;background:#fff;
+    display:flex;align-items:center;gap:20px;padding:7px 24px;
+  }
+  .card .txt{flex:1;text-align:center;display:flex;flex-direction:column;gap:2px;}
+  .card .lbl{font-size:13px;font-weight:700;color:var(--navy);letter-spacing:.04em;}
+  .card .nm{font-size:24px;font-weight:700;letter-spacing:.01em;line-height:1.25;}
+  .card .ds{font-size:13.5px;color:var(--mid);}
+  svg.big{width:56px;height:56px;flex:none;stroke:var(--ink);fill:none;
+          stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round;shape-rendering:geometricPrecision;}
+  .down{display:flex;justify-content:center;color:var(--navy);}
+  svg.arw{width:20px;height:16px;fill:currentColor;stroke:none;}
+
+  /* 補足パネル */
+  .panel{
+    border:1px solid var(--line);border-radius:8px;background:var(--panel);
+    padding:22px 26px;display:flex;flex-direction:column;gap:16px;
+  }
+  .panel h3{font-size:19px;font-weight:700;color:var(--navy);letter-spacing:.01em;}
+  .panel .ul{height:2.5px;background:var(--accent);width:100%;margin-top:-8px;}
+  .dash{list-style:none;display:flex;flex-direction:column;gap:13px;}
+  .dash li{position:relative;padding-left:22px;font-size:15.5px;line-height:1.7;}
+  .dash li::before{content:"–";position:absolute;left:0;color:var(--faint);}
+
+  /* 一般リスト */
+  ul.pl{list-style:none;display:flex;flex-direction:column;gap:10px;}
+  ul.pl li{position:relative;padding-left:18px;font-size:14.5px;line-height:1.8;}
+  ul.pl li::before{content:"";position:absolute;left:0;top:13px;width:7px;height:1.5px;background:var(--navy);}
+
+  .cols{display:grid;gap:32px;}
+  .c2{grid-template-columns:1fr 1fr;}
+  .c3{grid-template-columns:repeat(3,1fr);}
+  .cmain{grid-template-columns:1fr 340px;}
+  .stack{max-width:640px;margin:0 auto;width:100%;}
+  .caption{font-size:14px;color:var(--mid);text-align:center;line-height:1.7;}
+
+  .box{border:1.5px solid var(--navy);border-radius:10px;padding:22px 24px;display:flex;flex-direction:column;gap:10px;}
+  .box .hd{display:flex;align-items:center;gap:12px;}
+  .box .hd .t{font-size:18px;font-weight:700;}
+  .box .d{font-size:13.5px;line-height:1.85;color:var(--mid);}
+  svg.mid{width:30px;height:30px;flex:none;stroke:var(--navy);fill:none;
+          stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;shape-rendering:geometricPrecision;}
+
+  table{border-collapse:collapse;width:100%;font-size:14px;}
+  th,td{text-align:left;padding:13px 16px 13px 0;border-bottom:1px solid var(--line);vertical-align:top;line-height:1.7;}
+  thead th{font-size:12px;letter-spacing:.08em;color:var(--faint);font-weight:700;
+           border-bottom:2px solid var(--navy);padding-bottom:9px;}
+  tbody tr:last-child td{border-bottom:0;}
+  td.k{font-weight:700;color:var(--navy);white-space:nowrap;}
+
+  .note{border-left:3px solid var(--accent);padding-left:18px;}
+  /* ページごとの均衡調整: 内容の少ないページは間隔と余白を広げる */
+  .slide.roomy .content{gap:36px;}
+  .slide.roomy .box{padding:30px 32px;gap:13px;}
+  .slide.roomy .box .d{font-size:14.5px;}
+  .slide.roomy .box .hd .t{font-size:19px;}
+  .slide.roomy .note .body{font-size:16px;}
+  .slide.dense .content{gap:16px;}
+
+  .foot{
+    position:absolute;left:64px;right:64px;bottom:24px;
+    display:flex;justify-content:space-between;align-items:center;
+    border-top:1px solid var(--line);padding-top:9px;
+    font-size:10.5px;color:var(--faint);letter-spacing:.08em;
+  }
+  .foot .n{font-variant-numeric:tabular-nums;}
+
+  .cover{justify-content:center;gap:0;}
+  .cover .mark{font-size:12px;letter-spacing:.3em;color:var(--navy);font-weight:700;margin-bottom:26px;}
+  .cover .meta{margin-top:40px;padding-top:18px;border-top:1px solid var(--line);
+               display:flex;gap:44px;font-size:12px;color:var(--faint);letter-spacing:.1em;}
+
+  @media print{
+    html,body{background:#fff;} body{padding:0;}
+    .deck{gap:0;max-width:none;}
+    .stage{height:auto !important;overflow:visible;}
+    .slide{transform:none !important;box-shadow:none;break-after:page;page-break-after:always;}
+    .slide:last-child{break-after:auto;page-break-after:auto;}
+  }
+
+  .slide.dense th,.slide.dense td{padding:5px 12px 5px 0;}
+</style></head><body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+  <g id="i-clock"><circle cx="12" cy="12" r="8.5"/><path d="M12 6.6v5.6l3.6 2.2"/></g>
+  <g id="i-gear"><circle cx="12" cy="12" r="3.1"/><path d="M12 3.2v2.4M12 18.4v2.4M20.8 12h-2.4M5.6 12H3.2M18.2 5.8l-1.7 1.7M7.5 16.5l-1.7 1.7M18.2 18.2l-1.7-1.7M7.5 7.5L5.8 5.8"/></g>
+  <g id="i-lock"><rect x="4.6" y="10.4" width="14.8" height="10.2" rx="1.8"/><path d="M8.2 10.4V7.6a3.8 3.8 0 017.6 0v2.8"/><circle cx="12" cy="15.4" r="1.1"/></g>
+  <g id="i-chat"><path d="M3.4 4.6h17.2v11.6H9.4l-6 4.6z"/><path d="M7.4 8.8h9.2M7.4 12.4h5.8"/></g>
+  <g id="i-eye"><path d="M2.2 12S6 5.8 12 5.8 21.8 12 21.8 12 18 18.2 12 18.2 2.2 12 2.2 12z"/><circle cx="12" cy="12" r="2.8"/></g>
+  <g id="i-alert"><path d="M12 3.8l9.2 16.4H2.8z"/><path d="M12 9.6v4.6M12 17v.4"/></g>
+  <g id="i-layers"><path d="M12 3l9 4.9-9 4.9-9-4.9z"/><path d="M3 12.8l9 4.9 9-4.9"/></g>
+  <g id="i-check"><circle cx="12" cy="12" r="8.6"/><path d="M8.2 12.2l2.7 2.7 5-5.2"/></g>
+  <g id="i-target"><circle cx="12" cy="12" r="8.6"/><circle cx="12" cy="12" r="3.6"/></g>
+  <g id="i-doc"><path d="M6 2.8h8l4.2 4.2v14.2H6z"/><path d="M14 2.8v4.2h4.2"/><path d="M9 12.4h6.2M9 16.2h6.2"/></g>
+  <g id="i-people"><circle cx="9" cy="8.6" r="3.2"/><path d="M3.4 20.2c0-3.2 2.5-5.4 5.6-5.4s5.6 2.2 5.6 5.4"/><path d="M16.4 6.2a3.2 3.2 0 010 5.6M17.6 14.8c1.9.6 3.2 2.5 3.2 5.4"/></g>
+  <g id="i-arrowr"><path d="M3.6 12h15.4"/><path d="M14 6.6l5.4 5.4-5.4 5.4"/></g>
+  <symbol id="tri" viewBox="0 0 26 22"><path d="M13 22 3.5 8.5h6V0h7v8.5h6z"/></symbol>
+</defs></svg>
+<div class="deck">
+<div class="stage"><section class="slide cover">
+  <p class="mark">PHYSICAL AI ｜ 最終課題</p>
+  <h1>荷崩れしたパレットを、<br>ロボットが自分で積み替える</h1>
+  <div class="titlerule"></div>
+  <p class="sub" style="font-size:18px;max-width:900px">NVIDIA Isaac Sim の物理シミュレーションで、見る・選ぶ・運ぶ・確かめるを自律で行う門型ロボット。</p>
+  <div class="meta"><span>2026-11-02</span><span>Physical AI 応用1 最終課題</span><span>182174</span></div>
+</section></div><div class="stage"><section class="slide"><div class="head"><h2>概要と目的：崩れた荷を、崩さずに移す</h2><div class="titlerule"></div><p class="sub">目的：人が目的を伝えるだけで、崩れた荷をロボットが自分で判断して積み替える</p></div><div class="content">
+<p class="lede">輸送中のブレーキで崩れた荷は、箱どうしが支え合い、見えない箱もあります。一つ取るたびに、ほかの箱が崩れるおそれがあります。<br>人が伝えるのは「パレット A の荷を、パレット B へ積み替えてください」だけです。</p>
+<div class="cols c3">
+  <div class="box"><span class="hd"><svg viewBox="0 0 24 24" class="mid"><use href="#i-eye"/></svg><span class="t">見る</span></span>
+    <span class="d">カメラの深度から箱の位置と向きを推定します。光線が届かない場所は「空き」とみなしません。</span></div>
+  <div class="box"><span class="hd"><svg viewBox="0 0 24 24" class="mid"><use href="#i-layers"/></svg><span class="t">選ぶ</span></span>
+    <span class="d">誰が誰を支えているかを推定し、取っても崩れない箱から取ります。迷うときだけ見に行きます。</span></div>
+  <div class="box"><span class="hd"><svg viewBox="0 0 24 24" class="mid"><use href="#i-check"/></svg><span class="t">確かめる</span></span>
+    <span class="d">置いた後に自分のカメラで位置と向きを測ります。取れない箱は、人に知らせて終えます。</span></div>
+</div></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">02</span></div></section></div><div class="stage"><section class="slide"><div class="head"><h2>機体：持ち上げた直後に爪を入れる</h2><div class="titlerule"></div><p class="sub">揺れで落とさないよう、横へ動く前に爪で下から支える</p></div><div class="content">
+<div class="cols c2" style="align-items:center">
+  <div style="display:flex;flex-direction:column;gap:18px">
+    <ul class="pl">
+      <li>爪の台座は、吸着板の面にボルトで留める形に設計しました。</li>
+      <li>順番は、持ち上げる → 爪を差し込む → 向きを合わせる → 押さえる → 運ぶ、です。</li>
+      <li>動く範囲のどこでも部品どうしが重ならないことを、試験で確かめています。</li>
+      <li>実演の走行では 6 箱すべてで、横へ動かないまま爪を差し込みました（物理の刻みの記録で確認）。</li>
+    </ul>
+    <div class="note"><p class="small">爪で押さえた箱は回しません。向きは、押さえる前に合わせます。</p></div>
+  </div>
+  <div><img src="img/tines_after_lift_closeup.jpg" style="width:100%;border-radius:8px;border:1px solid var(--line)" alt="持ち上げた直後に爪を差し込んだ場面">
+  <p class="caption">持ち上げた直後、その場で爪を差し込んだところ（記録した走行の再描画）</p></div>
+</div></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">03</span></div></section></div><div class="stage"><section class="slide"><div class="head"><h2>工夫した点</h2><div class="titlerule"></div><p class="sub">自分が何を知らないかを数え、走行と同じ目で崩れを学ぶ</p></div><div class="content">
+<div class="cols c2">
+  <div class="box"><span class="hd"><svg viewBox="0 0 24 24" class="mid"><use href="#i-eye"/></svg><span class="t">見えていない所を数える</span></span>
+    <span class="d">光線が届いた所・止まった所・届かない所を分けて持ちます。その不確かさが次の判断を変えうるときだけ、見に行きます。</span></div>
+  <div class="box"><span class="hd"><svg viewBox="0 0 24 24" class="mid"><use href="#i-layers"/></svg><span class="t">崩れを予測して取る順を決める</span></span>
+    <span class="d">箱どうしの支え合いを推定し、物理の試行から学んだ予測で、取っても崩れない箱から取ります。</span></div>
+  <div class="box"><span class="hd"><svg viewBox="0 0 24 24" class="mid"><use href="#i-target"/></svg><span class="t">落とさない運び方</span></span>
+    <span class="d">持ち上げた直後、横へ動く前に爪を差し込みます。爪で押さえた箱は回さず、向きは押さえる前に合わせます。</span></div>
+  <div class="box"><span class="hd"><svg viewBox="0 0 24 24" class="mid"><use href="#i-doc"/></svg><span class="t">走行と同じ目で学ぶ</span></span>
+    <span class="d">学習の入力を、走行中にロボットが真上のカメラから作る見立てにそろえ、教師は物理の試行で作りました。学習に使っていない崩れ方でも確かめています。</span></div>
+</div></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">04</span></div></section></div><div class="stage"><section class="slide dense"><div class="head"><h2>改善で注力したこと</h2><div class="titlerule"></div><p class="sub">動く様子をそれらしく見せることより、物理として成り立ち、記録で確かめられることを優先した</p></div><div class="content">
+<table><thead><tr><th>注力した点</th><th>直す前</th><th>直した後</th></tr></thead><tbody>
+<tr><td class="k">機体の整合性</td><td>爪と機体のつなぎ目が辺で接するだけ。爪は横へ運んだ後に差し込んでいた</td><td>爪の台座を吸着板の面にボルトで留める形に設計し直した。持ち上げた直後、横へ動く前に爪で支える</td></tr>
+<tr><td class="k">学習の入力</td><td>正しい位置に雑音を足した値から学んでいた</td><td>真上のカメラの見立てから学ぶ予測を作り、走行で使った（学習に使っていない崩れ方で AUC 0.94、規則は 0.75）</td></tr>
+<tr><td class="k">崩れ方への適応</td><td>決まった一つの荷崩れで試していた</td><td>段の数・品目・ブレーキ・ラップを変えた場面で学び、学習に使っていない崩れ方で確かめた</td></tr>
+<tr><td class="k">見える化</td><td>映像だけで、ロボットの内部の状態が見えなかった</td><td>監視画面に、各軸の位置・吸着と爪の力・装置の状態・ロボットの目を、記録の値のまま時刻をそろえて出した</td></tr>
+<tr><td class="k">評価の誠実さ</td><td>—</td><td>始まりの状態・比べ方・合格の基準を走らせる前に固定し、結果を見てから変えない</td></tr>
+</tbody></table></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">05</span></div></section></div><div class="stage"><section class="slide dense"><div class="head"><h2>ロボットの目：最初の見立て</h2><div class="titlerule"></div><p class="sub">真上のカメラの映像に、ロボット自身の推定を重ねたもの（実演の走行、番号 228）</p></div><div class="content">
+<img src="img/robot_eye_228.jpg" style="width:100%;max-width:800px;margin:0 auto;display:block;border-radius:8px" alt="ロボットの見立て">
+<p class="small center">枠の色：緑は安全に取れる、赤は今は取れない、白は次に取る箱。<br>右の色分けはシミュレーターが出した物ごとの切り分けで、実機ではカメラの画像から推定する部分です。</p></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">06</span></div></section></div><div class="stage"><section class="slide"><div class="head"><h2>始まりの状態は、動かす前に選ぶ</h2><div class="titlerule"></div><p class="sub">荷崩れだけを物理で計算し、決めておいた条件で番号を順に判定した</p></div><div class="content">
+<table><thead><tr><th>項目</th><th>内容</th></tr></thead><tbody>
+<tr><td class="k">荷</td><td>3 箱ずつ 2 段の 6 箱。全工程を 2 倍速で 3 分以内に映せる量にした</td></tr>
+<tr><td class="k">条件</td><td>床や段から落ちた箱がない・上の段の半数以上がずれたか傾いた・ずれの最大 0.10 m 以上・中央値 0.04 m 以上</td></tr>
+<tr><td class="k">選んだ番号</td><td>200 から順に判定し、最初に満たした 228（ブレーキ 4.49 m/s²、上の段 3 箱がずれ、最大 0.18 m）</td></tr>
+<tr><td class="k">走らせ方</td><td>選んだ番号で 1 回だけ走らせる。走行の結果で番号を選び直さない</td></tr>
+</tbody></table></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">07</span></div></section></div><div class="stage"><section class="slide dense"><div class="head"><h2>結果：6 箱すべてを積み替えた</h2><div class="titlerule"></div><p class="sub">段階 S3 の判定に合格（判定の基準は走らせる前から変えていない）</p></div><div class="content">
+<div class="cols c2" style="align-items:center">
+  <table><thead><tr><th>項目</th><th>値</th></tr></thead><tbody>
+  <tr><td class="k">B に置いた箱</td><td>6 / 6（置いた後に自分のカメラで確認）</td></tr>
+  <tr><td class="k">二次の荷崩れ</td><td>0 回</td></tr>
+  <tr><td class="k">運搬中の落下</td><td>0 回</td></tr>
+  <tr><td class="k">置いた位置の誤差</td><td>最大 4.0 mm・向き 最大 1.2 度</td></tr>
+  <tr><td class="k">作業の時間</td><td>301 秒（シミュレーションの中の時間）</td></tr>
+  </tbody></table>
+  <div><img src="img/demo_done.jpg" style="width:86%;margin:0 auto;display:block;border-radius:8px;border:1px solid var(--line)" alt="積み替えを終えた場面">
+  <p class="caption">積み替えを終えた場面（記録した走行の再描画）</p></div>
+</div>
+<div class="note"><p class="small">崩れの予測で取る順を決め、6 箱の移載に成功しました。同じ条件は規則だけの判断でも成功しており、予測によって成功したとは言えません。</p></div></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">08</span></div></section></div><div class="stage"><section class="slide dense"><div class="head"><h2>映像：通常の荷を、監視画面とともに</h2><div class="titlerule"></div><p class="sub">24 箱の荷（番号 118）の最初の 3 分 57 秒を、2 倍速・省略なしで映した</p></div><div class="content">
+<img src="img/console.jpg" style="width:100%;max-width:700px;margin:0 auto;display:block;border-radius:8px;border:1px solid var(--line)" alt="監視画面">
+<p class="small center">左は記録した走行の再描画、右と下は同じ記録から読んだ計器（各軸の位置・吸着と爪の力・装置の状態・ロボットの目）。<br>この間に 5 箱を B へ移し、5 箱とも置いた後の確認に合格。取る順・見に行く場所・運ぶ経路はロボットが決めた。</p></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">09</span></div></section></div><div class="stage"><section class="slide dense"><div class="head"><h2>AI：崩れの予測を、物理の試行から学ぶ</h2><div class="titlerule"></div><p class="sub">箱を一つ取り除いたとき、ほかの箱が崩れるかを予測する（ロジスティック回帰）</p></div><div class="content">
+<div class="cols c2">
+  <div style="display:flex;flex-direction:column;gap:10px"><p class="body"><strong>カメラの見立てから学んだ予測</strong>（実演の走行で使用）</p>
+    <table><thead><tr><th>評価の場面</th><th>AUC 学習</th><th>AUC 規則</th><th>Brier 学習</th><th>Brier 規則</th></tr></thead><tbody><tr><td class='k'>学習と同じ条件</td><td>0.985</td><td>0.823</td><td>0.013</td><td>0.035</td></tr><tr><td class='k'>学習に使っていない条件</td><td>0.942</td><td>0.746</td><td>0.011</td><td>0.037</td></tr></tbody></table></div>
+  <div style="display:flex;flex-direction:column;gap:10px"><p class="body"><strong>正しい位置＋雑音から学んだ予測</strong></p>
+    <table><thead><tr><th>評価の場面</th><th>AUC 学習</th><th>AUC 規則</th><th>Brier 学習</th><th>Brier 規則</th></tr></thead><tbody><tr><td class='k'>学習と同じ条件</td><td>0.975</td><td>0.589</td><td>0.012</td><td>0.041</td></tr><tr><td class='k'>学習に使っていない条件</td><td>0.937</td><td>0.566</td><td>0.014</td><td>0.030</td></tr></tbody></table></div>
+</div>
+<ul class="pl">
+  <li>学習のデータは、段の数・品目・ブレーキ・ラップの外れ方を変えた荷崩れで、物理シミュレーションを試して作りました。</li>
+  <li>3 段の荷と強いブレーキは学習に使わず、その条件でも規則を上回ることを、データを作る前に決めた基準で確かめました。</li>
+</ul></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">10</span></div></section></div><div class="stage"><section class="slide"><div class="head"><h2>この提出の範囲</h2><div class="titlerule"></div><p class="sub">シミュレーションの結果であり、実機ではまだ確かめていない</p></div><div class="content">
+<div class="cols c2">
+  <div class="panel"><h3>確かめたこと</h3><div class="ul"></div><ul class="dash">
+    <li>崩れた 6 箱の荷を、二次の荷崩れなく B へ積み替えた</li>
+    <li>置いた箱はすべて、置いた後に自分のカメラで確かめた</li>
+    <li>持ち上げた直後、横へ動く前に爪を差し込んだ</li>
+    <li>崩れの予測は、学習に使っていない崩れ方でも規則を上回った</li></ul></div>
+  <div class="panel"><h3>前提</h3><div class="ul"></div><ul class="dash">
+    <li>NVIDIA Isaac Sim の物理シミュレーション</li>
+    <li>物体ごとの切り分けはシミュレーターが出したもの</li>
+    <li>吸着は Isaac Sim 標準の部品で表した</li>
+    <li>箱の寸法と重さは仮の値</li></ul></div>
+</div>
+<div class="note"><p class="small">全工程の成功は 6 箱・1 条件です。映像の 24 箱の走行は 11 箱で止まり（6 箱目が置いた後に倒れた）、別の 8 走行も全工程の基準を満たしていません。詳細はリポジトリに掲載しています。</p></div></div><div class="foot"><span>荷崩れパレットの自律積み替え｜PAI 最終課題</span><span class="n">11</span></div></section></div>
+</div>
+<script>
+  (function(){
+    var W=1280,H=720;
+    function fit(){
+      document.querySelectorAll('.stage').forEach(function(st){
+        var s=st.clientWidth/W;
+        st.style.setProperty('--s',s);
+        st.style.height=(H*s)+'px';
+        st.firstElementChild.style.setProperty('--s',s);
+      });
+    }
+    window.addEventListener('resize',fit); fit();
+  })();
+</script>
+</body></html>

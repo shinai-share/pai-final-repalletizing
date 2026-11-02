@@ -1,0 +1,137 @@
+{
+ "seen": {
+  "test_samples": 2163,
+  "test_positives": 49,
+  "geometric_rule": {
+   "auc": 0.8230842005676443,
+   "brier": 0.03513638465094776,
+   "recall": 0.7959183673469388,
+   "false_alarm_rate": 0.03122043519394513
+  },
+  "learned": {
+   "auc": 0.9849593574421254,
+   "brier": 0.012551395557376735,
+   "calibration": [
+    {
+     "range": [
+      0.0,
+      0.2
+     ],
+     "n": 2088,
+     "predicted": 0.008,
+     "observed": 0.003
+    },
+    {
+     "range": [
+      0.2,
+      0.4
+     ],
+     "n": 29,
+     "predicted": 0.308,
+     "observed": 0.517
+    },
+    {
+     "range": [
+      0.4,
+      0.6
+     ],
+     "n": 20,
+     "predicted": 0.505,
+     "observed": 0.55
+    },
+    {
+     "range": [
+      0.6,
+      0.8
+     ],
+     "n": 17,
+     "predicted": 0.67,
+     "observed": 0.706
+    },
+    {
+     "range": [
+      0.8,
+      1.0
+     ],
+     "n": 9,
+     "predicted": 0.903,
+     "observed": 0.444
+    }
+   ]
+  }
+ },
+ "unseen": {
+  "test_samples": 3306,
+  "test_positives": 64,
+  "geometric_rule": {
+   "auc": 0.7462118291178285,
+   "brier": 0.03660012099213551,
+   "recall": 0.734375,
+   "false_alarm_rate": 0.032078963602714373
+  },
+  "learned": {
+   "auc": 0.9422858189389266,
+   "brier": 0.011423956638768952,
+   "calibration": [
+    {
+     "range": [
+      0.0,
+      0.2
+     ],
+     "n": 3227,
+     "predicted": 0.006,
+     "observed": 0.007
+    },
+    {
+     "range": [
+      0.2,
+      0.4
+     ],
+     "n": 33,
+     "predicted": 0.301,
+     "observed": 0.424
+    },
+    {
+     "range": [
+      0.4,
+      0.6
+     ],
+     "n": 12,
+     "predicted": 0.497,
+     "observed": 0.5
+    },
+    {
+     "range": [
+      0.6,
+      0.8
+     ],
+     "n": 24,
+     "predicted": 0.692,
+     "observed": 0.542
+    },
+    {
+     "range": [
+      0.8,
+      1.0
+     ],
+     "n": 10,
+     "predicted": 0.882,
+     "observed": 1.0
+    }
+   ]
+  }
+ },
+ "weights": {
+  "geo_falls": 0.572,
+  "geo_severity": -0.293,
+  "vertical_share_on_removed": 0.432,
+  "leans_on_removed": -0.09,
+  "margin_after": 1.708,
+  "margin_before": -1.683,
+  "tilt": 0.566,
+  "bottom_height": -0.24,
+  "distance": -0.441,
+  "unexplained": 0.486,
+  "n_supporters": 0.245
+ }
+}

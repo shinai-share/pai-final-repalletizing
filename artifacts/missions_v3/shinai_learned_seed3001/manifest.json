@@ -1,0 +1,15 @@
+{
+ "episode": "shinai_learned-3001",
+ "git_commit": "c10072ec122ef4abbff1d47c3dafabda0d109a25",
+ "seed": 3001,
+ "policy": "shinai_learned",
+ "cell_config": "cell.toml",
+ "cell_config_sha256": "6325cf8df1014e1261050ad05c9ca05a0308663d9a71c67c5cf92323c03bfd0d",
+ "simulator": "NVIDIA Isaac Sim 6.2.0.0",
+ "physics_dt": 0.008333333,
+ "python": "3.12.10",
+ "run_datetime_utc": "2026-10-31T15:08:36Z",
+ "result_status": "unresolved",
+ "cascade_model": "cascade_v3.json",
+ "cascade_model_sha256": "9a6356498edca01257f034d761bed0ab52923709e00261163bb3d0e94e535a9c"
+}

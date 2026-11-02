@@ -1,0 +1,1269 @@
+{
+ "seed": 3001,
+ "policy": "shinai_learned",
+ "sku": "BEV-500x24",
+ "status": "unresolved",
+ "max_picks": null,
+ "sim_seconds": 1482.52,
+ "wall_seconds": 4103.8,
+ "observations": 33,
+ "side_observations": 2,
+ "safety_stops": 0,
+ "grip_failures": 0,
+ "fallback_picks": 0,
+ "learned_decisions": 30,
+ "learned_changed": 15,
+ "remaining": {},
+ "unseen_outside_reach": [],
+ "not_found": 6,
+ "transport": {
+  "transport_s": 3.008,
+  "settled_after_s": 0.0
+ },
+ "brake_decel": 7.46,
+ "loose_layers": [
+  2
+ ],
+ "picks": 30,
+ "secondary_collapses": 0,
+ "disturbed_cases": 0,
+ "placed_cases_pushed": [],
+ "picks_with_disturbance": 0,
+ "drops_in_transit": 0,
+ "prediction": {
+  "true_positive": 0,
+  "missed": 0,
+  "false_alarm": 2
+ },
+ "placed_on_b": 30,
+ "placement_xy_err_max_m": 0.009,
+ "placement_yaw_max_deg": 1.17,
+ "placement_tilt_max_deg": 0.0,
+ "placement_errors": {
+  "case_32": {
+   "slot": 0,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.03
+  },
+  "case_30": {
+   "slot": 1,
+   "xy_m": 0.0005,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.04
+  },
+  "case_33": {
+   "slot": 2,
+   "xy_m": 0.0007,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.06
+  },
+  "case_35": {
+   "slot": 3,
+   "xy_m": 0.0008,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.46
+  },
+  "case_34": {
+   "slot": 4,
+   "xy_m": 0.0001,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.17
+  },
+  "case_31": {
+   "slot": 5,
+   "xy_m": 0.0019,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.31
+  },
+  "case_20": {
+   "slot": 6,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_15": {
+   "slot": 7,
+   "xy_m": 0.0019,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.28
+  },
+  "case_23": {
+   "slot": 8,
+   "xy_m": 0.0028,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.03
+  },
+  "case_19": {
+   "slot": 9,
+   "xy_m": 0.0009,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.19
+  },
+  "case_21": {
+   "slot": 10,
+   "xy_m": 0.0006,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.04
+  },
+  "case_22": {
+   "slot": 11,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_18": {
+   "slot": 12,
+   "xy_m": 0.0009,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.22
+  },
+  "case_14": {
+   "slot": 13,
+   "xy_m": 0.0007,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.55
+  },
+  "case_12": {
+   "slot": 14,
+   "xy_m": 0.0005,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.57
+  },
+  "case_16": {
+   "slot": 15,
+   "xy_m": 0.0026,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.26
+  },
+  "case_13": {
+   "slot": 16,
+   "xy_m": 0.0011,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.02
+  },
+  "case_17": {
+   "slot": 17,
+   "xy_m": 0.0032,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.27
+  },
+  "case_11": {
+   "slot": 18,
+   "xy_m": 0.0002,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.05
+  },
+  "case_00": {
+   "slot": 19,
+   "xy_m": 0.0026,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.02
+  },
+  "case_02": {
+   "slot": 20,
+   "xy_m": 0.0002,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.01
+  },
+  "case_05": {
+   "slot": 21,
+   "xy_m": 0.0001,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_03": {
+   "slot": 22,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_09": {
+   "slot": 23,
+   "xy_m": 0.0005,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_08": {
+   "slot": 24,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.1
+  },
+  "case_01": {
+   "slot": 25,
+   "xy_m": 0.0014,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.01
+  },
+  "case_04": {
+   "slot": 26,
+   "xy_m": 0.001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.43
+  },
+  "case_10": {
+   "slot": 27,
+   "xy_m": 0.0005,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.01
+  },
+  "case_06": {
+   "slot": 28,
+   "xy_m": 0.003,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.71
+  },
+  "case_07": {
+   "slot": 29,
+   "xy_m": 0.009,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.17
+  }
+ },
+ "placed_unscored": [],
+ "final_positions": {
+  "case_00": [
+   1.365,
+   0.0,
+   0.474
+  ],
+  "case_01": [
+   0.95,
+   -0.414,
+   0.694
+  ],
+  "case_02": [
+   0.537,
+   0.367,
+   0.474
+  ],
+  "case_03": [
+   1.088,
+   0.367,
+   0.474
+  ],
+  "case_04": [
+   1.317,
+   -0.413,
+   0.694
+  ],
+  "case_05": [
+   0.812,
+   0.367,
+   0.474
+  ],
+  "case_06": [
+   0.947,
+   -0.139,
+   0.694
+  ],
+  "case_07": [
+   1.308,
+   -0.141,
+   0.694
+  ],
+  "case_08": [
+   0.583,
+   -0.412,
+   0.694
+  ],
+  "case_09": [
+   1.362,
+   0.367,
+   0.474
+  ],
+  "case_10": [
+   0.583,
+   -0.138,
+   0.694
+  ],
+  "case_11": [
+   1.087,
+   0.0,
+   0.474
+  ],
+  "case_12": [
+   1.087,
+   -0.366,
+   0.474
+  ],
+  "case_13": [
+   0.538,
+   -0.001,
+   0.474
+  ],
+  "case_14": [
+   0.812,
+   -0.366,
+   0.474
+  ],
+  "case_15": [
+   0.948,
+   0.137,
+   0.254
+  ],
+  "case_16": [
+   1.365,
+   -0.366,
+   0.474
+  ],
+  "case_17": [
+   0.816,
+   0.001,
+   0.474
+  ],
+  "case_18": [
+   0.538,
+   -0.368,
+   0.474
+  ],
+  "case_19": [
+   0.583,
+   0.413,
+   0.254
+  ],
+  "case_20": [
+   0.583,
+   0.138,
+   0.254
+  ],
+  "case_21": [
+   0.95,
+   0.413,
+   0.254
+  ],
+  "case_22": [
+   1.317,
+   0.413,
+   0.254
+  ],
+  "case_23": [
+   1.314,
+   0.139,
+   0.254
+  ],
+  "case_24": [
+   -1.299,
+   -2.336,
+   0.11
+  ],
+  "case_25": [
+   -0.871,
+   -2.516,
+   0.11
+  ],
+  "case_26": [
+   -0.503,
+   -2.583,
+   0.11
+  ],
+  "case_27": [
+   -1.338,
+   -1.667,
+   0.135
+  ],
+  "case_28": [
+   -0.844,
+   -1.659,
+   0.11
+  ],
+  "case_29": [
+   -0.451,
+   -1.828,
+   0.135
+  ],
+  "case_30": [
+   0.95,
+   -0.413,
+   0.254
+  ],
+  "case_31": [
+   1.318,
+   -0.139,
+   0.254
+  ],
+  "case_32": [
+   0.584,
+   -0.413,
+   0.254
+  ],
+  "case_33": [
+   1.317,
+   -0.412,
+   0.254
+  ],
+  "case_34": [
+   0.95,
+   -0.137,
+   0.254
+  ],
+  "case_35": [
+   0.584,
+   -0.138,
+   0.254
+  ]
+ },
+ "handed_over": 0,
+ "left_on_a": 6,
+ "cases_never_detected": [
+  "case_24",
+  "case_25",
+  "case_26",
+  "case_27",
+  "case_28",
+  "case_29"
+ ],
+ "left_on_a_positions": {
+  "case_24": [
+   -1.299,
+   -2.336,
+   0.11
+  ],
+  "case_25": [
+   -0.871,
+   -2.516,
+   0.11
+  ],
+  "case_26": [
+   -0.503,
+   -2.583,
+   0.11
+  ],
+  "case_27": [
+   -1.338,
+   -1.667,
+   0.135
+  ],
+  "case_28": [
+   -0.844,
+   -1.659,
+   0.11
+  ],
+  "case_29": [
+   -0.451,
+   -1.828,
+   0.135
+  ]
+ },
+ "per_pick": [
+  {
+   "case": "case_32",
+   "risk": 0.028,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_30",
+   "risk": 0.044,
+   "fallback": false,
+   "predicted": [
+    "case_33"
+   ],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_33",
+   "risk": 0.042,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_35",
+   "risk": 0.051,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_34",
+   "risk": 0.063,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_31",
+   "risk": 0.073,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_20",
+   "risk": 0.032,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_15",
+   "risk": 0.032,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_23",
+   "risk": 0.029,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_19",
+   "risk": 0.011,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_21",
+   "risk": 0.013,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_22",
+   "risk": 0.014,
+   "fallback": false,
+   "predicted": [
+    "case_18"
+   ],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_18",
+   "risk": 0.023,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_14",
+   "risk": 0.012,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_12",
+   "risk": 0.026,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_16",
+   "risk": 0.011,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_13",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_17",
+   "risk": 0.013,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_11",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_00",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_02",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_05",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_03",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_09",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_08",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_01",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_04",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_10",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_06",
+   "risk": 0.049,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_07",
+   "risk": 0.055,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  }
+ ],
+ "start_positions": {
+  "case_00": [
+   -1.317,
+   -0.413,
+   0.254
+  ],
+  "case_01": [
+   -0.95,
+   -0.412,
+   0.254
+  ],
+  "case_02": [
+   -0.583,
+   -0.412,
+   0.254
+  ],
+  "case_03": [
+   -1.317,
+   -0.138,
+   0.254
+  ],
+  "case_04": [
+   -0.95,
+   -0.137,
+   0.254
+  ],
+  "case_05": [
+   -0.583,
+   -0.137,
+   0.254
+  ],
+  "case_06": [
+   -1.317,
+   0.137,
+   0.254
+  ],
+  "case_07": [
+   -0.95,
+   0.137,
+   0.254
+  ],
+  "case_08": [
+   -0.583,
+   0.138,
+   0.254
+  ],
+  "case_09": [
+   -1.317,
+   0.412,
+   0.254
+  ],
+  "case_10": [
+   -0.95,
+   0.412,
+   0.254
+  ],
+  "case_11": [
+   -0.583,
+   0.412,
+   0.254
+  ],
+  "case_12": [
+   -1.363,
+   -0.367,
+   0.474
+  ],
+  "case_13": [
+   -1.088,
+   -0.367,
+   0.474
+  ],
+  "case_14": [
+   -0.813,
+   -0.367,
+   0.474
+  ],
+  "case_15": [
+   -0.538,
+   -0.367,
+   0.474
+  ],
+  "case_16": [
+   -1.363,
+   -0.0,
+   0.474
+  ],
+  "case_17": [
+   -1.088,
+   -0.0,
+   0.474
+  ],
+  "case_18": [
+   -0.813,
+   0.0,
+   0.474
+  ],
+  "case_19": [
+   -0.538,
+   0.0,
+   0.474
+  ],
+  "case_20": [
+   -1.363,
+   0.367,
+   0.474
+  ],
+  "case_21": [
+   -1.088,
+   0.367,
+   0.474
+  ],
+  "case_22": [
+   -0.813,
+   0.367,
+   0.474
+  ],
+  "case_23": [
+   -0.538,
+   0.367,
+   0.474
+  ],
+  "case_24": [
+   -1.299,
+   -2.336,
+   0.11
+  ],
+  "case_25": [
+   -0.871,
+   -2.516,
+   0.11
+  ],
+  "case_26": [
+   -0.503,
+   -2.583,
+   0.11
+  ],
+  "case_27": [
+   -1.338,
+   -1.667,
+   0.135
+  ],
+  "case_28": [
+   -0.844,
+   -1.659,
+   0.11
+  ],
+  "case_29": [
+   -0.451,
+   -1.828,
+   0.135
+  ],
+  "case_30": [
+   -1.28,
+   -0.052,
+   0.694
+  ],
+  "case_31": [
+   -0.91,
+   -0.052,
+   0.694
+  ],
+  "case_32": [
+   -0.51,
+   -0.526,
+   0.719
+  ],
+  "case_33": [
+   -1.299,
+   0.218,
+   0.694
+  ],
+  "case_34": [
+   -0.935,
+   0.322,
+   0.694
+  ],
+  "case_35": [
+   -0.548,
+   0.339,
+   0.694
+  ]
+ },
+ "case_states": {
+  "placed_on_b": 30,
+  "held_by_robot": 0,
+  "handed_over": 0,
+  "outside_cell": 6,
+  "left_in_cell": 0
+ },
+ "placed_quality": {
+  "ok": 30,
+  "ng": 0,
+  "unscored": 0
+ },
+ "case_ledger": {
+  "case_00": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_01": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_02": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_03": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_04": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_05": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_06": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_07": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_08": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_09": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_10": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_11": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_12": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_13": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_14": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_15": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_16": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_17": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_18": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_19": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_20": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_21": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_22": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_23": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_24": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.3,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_25": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.3,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_26": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.3,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_27": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.5,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_28": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.5,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_29": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.5,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_30": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_31": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_32": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_33": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_34": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_35": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  }
+ }
+}

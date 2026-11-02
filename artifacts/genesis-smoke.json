@@ -1,0 +1,13 @@
+{
+  "gpu": "NVIDIA GeForce RTX 5070 Ti",
+  "torch": "2.11.0+cu128",
+  "cuda_runtime": "12.8",
+  "build_seconds": 100.06117063498823,
+  "steps_per_second": 1173.9389060700971,
+  "final_box_position": [
+    7.502683807558697e-09,
+    1.063569943227094e-08,
+    0.09989223629236221
+  ],
+  "settled": true
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inspector｜荷崩れ対応</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header class="bar">
+  <div class="brand">Inspector<span class="sub">荷崩れの積み替え</span></div>
+  <div class="mission" id="mission">ミッションを選んでください</div>
+  <div class="status">
+    <span class="pill" id="safety" data-state="unknown">安全：確認中</span>
+    <span class="clock" id="clock">0:00</span>
+    <span class="mode" id="mode">再生</span>
+  </div>
+</header>
+
+<main class="grid">
+  <section class="stage" aria-label="シミュレーション映像">
+    <div class="frame">
+      <img id="frame" alt="Isaac Sim の作業セルの映像">
+      <div class="insets">
+        <figure class="inset" id="inset-side" hidden><img alt="横から見た荷崩れ"><figcaption>横から</figcaption></figure>
+        <figure class="inset" id="inset-closeup" hidden><img alt="吸着部と手首の手元"><figcaption>手元</figcaption></figure>
+      </div>
+      <div class="frame-empty" id="frame-empty">映像はまだありません。ミッションを記録付きで動かすと表示されます。</div>
+      <div class="caption" id="now">待機中</div>
+      <div class="tag">シミュレーション（NVIDIA Isaac Sim）</div>
+    </div>
+    <ol class="timeline" id="timeline" aria-label="判断と動作の記録"></ol>
+  </section>
+
+  <aside class="side">
+    <section class="panel" id="eye-panel" hidden>
+      <h2>ロボットの目<span class="hint" id="eye-camera">内蔵カメラ</span></h2>
+      <img id="eye" class="eye" alt="ロボットのカメラの映像に、ロボットの見立てを重ねた画像。右は物ごとの切り分け">
+      <p class="eye-note" id="eye-note"></p>
+      <ul class="legend">
+        <li><i class="k eye-next"></i>次に取る</li>
+        <li><i class="k eye-safe"></i>安全に取れる</li>
+        <li><i class="k eye-risky"></i>取れるが、ほかが崩れる見込み</li>
+        <li><i class="k eye-blocked"></i>今は取れない</li>
+      </ul>
+      <p class="eye-note">右側は、物ごとの切り分けです。シミュレーターが出したもので、実機ではカメラの画像から推定する部分です。枠の形・崩れる見込み・取る順番は、ロボット自身の推定です。</p>
+    </section>
+
+    <section class="panel">
+      <h2>パレット A の見立て<span class="hint">真上から</span></h2>
+      <svg id="map" viewBox="0 0 400 230" role="img" aria-label="パレット A のケースの推定と、見えていない場所"></svg>
+      <ul class="legend">
+        <li><i class="k next"></i>次に取る</li>
+        <li><i class="k safe"></i>安全に取れる</li>
+        <li><i class="k falls"></i>取ると倒れる見込み</li>
+        <li><i class="k blocked"></i>今は取れない</li>
+        <li><i class="k unknown"></i>見えていない場所</li>
+        <li><i class="k com"></i>重心の幅（中身の偏り）</li>
+        <li><i class="k rests"></i>載っている先</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>まだ分かっていないこと</h2>
+      <dl class="facts">
+        <div><dt>見えていない空間</dt><dd id="unknown">—</dd></div>
+        <div><dt>次に取るケースの周りに隠れたケースがある見込み</dt><dd id="hidden">—</dd></div>
+        <div><dt>位置に自信がないケース（確からしさ 80% 未満）</dt><dd id="lowconf">—</dd></div>
+      </dl>
+      <p class="why" id="why"></p>
+    </section>
+
+    <section class="panel">
+      <h2>進み具合</h2>
+      <div class="progress"><div class="fill" id="fill"></div></div>
+      <dl class="facts compact">
+        <div><dt>B に積んだ</dt><dd id="placed">—</dd></div>
+        <div><dt>人に渡した</dt><dd id="handed">—</dd></div>
+      </dl>
+    </section>
+  </aside>
+</main>
+
+<footer class="controls">
+  <select id="run" aria-label="ミッション"></select>
+  <button id="play" type="button">再生</button>
+  <select id="speed" aria-label="再生の速さ">
+    <option value="1">等倍</option><option value="2" selected>2 倍速</option><option value="4">4 倍速</option>
+  </select>
+  <input id="seek" type="range" min="0" max="1000" value="0" aria-label="時刻">
+  <span class="speednote" id="speednote">2 倍速で再生しています</span>
+</footer>
+<script src="/app.js"></script>
+</body>
+</html>

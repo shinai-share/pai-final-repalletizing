@@ -1,0 +1,842 @@
+{
+ "seed": 3014,
+ "policy": "shinai_learned",
+ "sku": "BEV-500x24",
+ "status": "unresolved",
+ "max_picks": null,
+ "sim_seconds": 722.67,
+ "wall_seconds": 5436.3,
+ "observations": 18,
+ "side_observations": 2,
+ "safety_stops": 0,
+ "grip_failures": 0,
+ "fallback_picks": 0,
+ "learned_decisions": 15,
+ "learned_changed": 4,
+ "remaining": {},
+ "unseen_outside_reach": [],
+ "not_found": 9,
+ "transport": {
+  "transport_s": 3.008,
+  "settled_after_s": 0.0
+ },
+ "brake_decel": 8.99,
+ "loose_layers": [
+  1
+ ],
+ "picks": 15,
+ "secondary_collapses": 0,
+ "disturbed_cases": 0,
+ "placed_cases_pushed": [],
+ "picks_with_disturbance": 0,
+ "drops_in_transit": 0,
+ "prediction": {
+  "true_positive": 0,
+  "missed": 0,
+  "false_alarm": 0
+ },
+ "placed_on_b": 15,
+ "placement_xy_err_max_m": 0.0053,
+ "placement_yaw_max_deg": 1.33,
+ "placement_tilt_max_deg": 0.0,
+ "placement_errors": {
+  "case_19": {
+   "slot": 0,
+   "xy_m": 0.0006,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.03
+  },
+  "case_23": {
+   "slot": 1,
+   "xy_m": 0.0007,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.28
+  },
+  "case_15": {
+   "slot": 2,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.45
+  },
+  "case_11": {
+   "slot": 3,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.02
+  },
+  "case_00": {
+   "slot": 4,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_02": {
+   "slot": 5,
+   "xy_m": 0.0008,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_05": {
+   "slot": 6,
+   "xy_m": 0.0003,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.0
+  },
+  "case_09": {
+   "slot": 7,
+   "xy_m": 0.0001,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.03
+  },
+  "case_03": {
+   "slot": 8,
+   "xy_m": 0.0003,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.06
+  },
+  "case_08": {
+   "slot": 9,
+   "xy_m": 0.0003,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.86
+  },
+  "case_01": {
+   "slot": 10,
+   "xy_m": 0.0004,
+   "z_m": -0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.27
+  },
+  "case_04": {
+   "slot": 11,
+   "xy_m": 0.0025,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 1.33
+  },
+  "case_10": {
+   "slot": 12,
+   "xy_m": 0.0042,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.88
+  },
+  "case_06": {
+   "slot": 13,
+   "xy_m": 0.0003,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.11
+  },
+  "case_07": {
+   "slot": 14,
+   "xy_m": 0.0053,
+   "z_m": 0.0,
+   "tilt_deg": 0.0,
+   "yaw_deg": 0.89
+  }
+ },
+ "placed_unscored": [],
+ "final_positions": {
+  "case_00": [
+   0.95,
+   -0.137,
+   0.254
+  ],
+  "case_01": [
+   0.95,
+   0.412,
+   0.254
+  ],
+  "case_02": [
+   1.317,
+   -0.137,
+   0.254
+  ],
+  "case_03": [
+   1.317,
+   0.137,
+   0.254
+  ],
+  "case_04": [
+   1.319,
+   0.412,
+   0.254
+  ],
+  "case_05": [
+   0.584,
+   0.138,
+   0.254
+  ],
+  "case_06": [
+   0.813,
+   -0.367,
+   0.474
+  ],
+  "case_07": [
+   1.086,
+   -0.372,
+   0.474
+  ],
+  "case_08": [
+   0.583,
+   0.412,
+   0.254
+  ],
+  "case_09": [
+   0.95,
+   0.137,
+   0.254
+  ],
+  "case_10": [
+   0.533,
+   -0.368,
+   0.474
+  ],
+  "case_11": [
+   0.583,
+   -0.137,
+   0.254
+  ],
+  "case_12": [
+   -3.78,
+   -0.296,
+   0.11
+  ],
+  "case_13": [
+   -3.239,
+   -0.334,
+   0.11
+  ],
+  "case_14": [
+   -2.755,
+   -0.429,
+   0.11
+  ],
+  "case_15": [
+   1.316,
+   -0.413,
+   0.254
+  ],
+  "case_16": [
+   -3.661,
+   0.154,
+   0.11
+  ],
+  "case_17": [
+   -3.098,
+   0.071,
+   0.135
+  ],
+  "case_18": [
+   -2.677,
+   0.019,
+   0.11
+  ],
+  "case_19": [
+   0.584,
+   -0.412,
+   0.254
+  ],
+  "case_20": [
+   -4.129,
+   0.681,
+   0.11
+  ],
+  "case_21": [
+   -3.006,
+   0.574,
+   0.11
+  ],
+  "case_22": [
+   -2.584,
+   0.399,
+   0.135
+  ],
+  "case_23": [
+   0.95,
+   -0.412,
+   0.254
+  ]
+ },
+ "handed_over": 0,
+ "left_on_a": 9,
+ "cases_never_detected": [
+  "case_12",
+  "case_13",
+  "case_14",
+  "case_16",
+  "case_17",
+  "case_18",
+  "case_20",
+  "case_21",
+  "case_22"
+ ],
+ "left_on_a_positions": {
+  "case_12": [
+   -3.78,
+   -0.296,
+   0.11
+  ],
+  "case_13": [
+   -3.239,
+   -0.334,
+   0.11
+  ],
+  "case_14": [
+   -2.755,
+   -0.429,
+   0.11
+  ],
+  "case_16": [
+   -3.661,
+   0.154,
+   0.11
+  ],
+  "case_17": [
+   -3.098,
+   0.071,
+   0.135
+  ],
+  "case_18": [
+   -2.677,
+   0.019,
+   0.11
+  ],
+  "case_20": [
+   -4.129,
+   0.681,
+   0.11
+  ],
+  "case_21": [
+   -3.006,
+   0.574,
+   0.11
+  ],
+  "case_22": [
+   -2.584,
+   0.399,
+   0.135
+  ]
+ },
+ "per_pick": [
+  {
+   "case": "case_19",
+   "risk": 0.012,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_23",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_15",
+   "risk": 0.003,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_11",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_00",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_02",
+   "risk": 0.004,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_05",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_09",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_03",
+   "risk": 0.005,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_08",
+   "risk": 0.006,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_01",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_04",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_10",
+   "risk": 0.01,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_06",
+   "risk": 0.049,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  },
+  {
+   "case": "case_07",
+   "risk": 0.055,
+   "fallback": false,
+   "predicted": [],
+   "disturbed": [],
+   "collapsed": []
+  }
+ ],
+ "start_positions": {
+  "case_00": [
+   -1.317,
+   -0.413,
+   0.254
+  ],
+  "case_01": [
+   -0.95,
+   -0.413,
+   0.254
+  ],
+  "case_02": [
+   -0.583,
+   -0.412,
+   0.254
+  ],
+  "case_03": [
+   -1.317,
+   -0.138,
+   0.254
+  ],
+  "case_04": [
+   -0.95,
+   -0.137,
+   0.254
+  ],
+  "case_05": [
+   -0.583,
+   -0.137,
+   0.254
+  ],
+  "case_06": [
+   -1.317,
+   0.137,
+   0.254
+  ],
+  "case_07": [
+   -0.95,
+   0.138,
+   0.254
+  ],
+  "case_08": [
+   -0.583,
+   0.137,
+   0.254
+  ],
+  "case_09": [
+   -1.317,
+   0.413,
+   0.254
+  ],
+  "case_10": [
+   -0.95,
+   0.413,
+   0.254
+  ],
+  "case_11": [
+   -0.583,
+   0.412,
+   0.254
+  ],
+  "case_12": [
+   -3.78,
+   -0.296,
+   0.11
+  ],
+  "case_13": [
+   -3.239,
+   -0.334,
+   0.11
+  ],
+  "case_14": [
+   -2.755,
+   -0.429,
+   0.11
+  ],
+  "case_15": [
+   -0.631,
+   -0.372,
+   0.474
+  ],
+  "case_16": [
+   -3.661,
+   0.154,
+   0.11
+  ],
+  "case_17": [
+   -3.098,
+   0.071,
+   0.135
+  ],
+  "case_18": [
+   -2.677,
+   0.019,
+   0.11
+  ],
+  "case_19": [
+   -1.026,
+   -0.039,
+   0.499
+  ],
+  "case_20": [
+   -4.129,
+   0.681,
+   0.11
+  ],
+  "case_21": [
+   -3.006,
+   0.574,
+   0.11
+  ],
+  "case_22": [
+   -2.584,
+   0.399,
+   0.135
+  ],
+  "case_23": [
+   -1.148,
+   0.383,
+   0.474
+  ]
+ },
+ "case_states": {
+  "placed_on_b": 15,
+  "held_by_robot": 0,
+  "handed_over": 0,
+  "outside_cell": 9,
+  "left_in_cell": 0
+ },
+ "placed_quality": {
+  "ok": 15,
+  "ng": 0,
+  "unscored": 0
+ },
+ "case_ledger": {
+  "case_00": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_01": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_02": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_03": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_04": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_05": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_06": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_07": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_08": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_09": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_10": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_11": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_12": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 1.8,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_13": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.0,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_14": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.1,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_15": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_16": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 1.8,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_17": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.0,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_18": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.1,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_19": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  },
+  "case_20": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 1.8,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_21": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.0,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_22": {
+   "state": "outside_cell",
+   "detail": "作業場の外",
+   "quality": null,
+   "left_pallet": "before_mission",
+   "detected": false,
+   "left_pallet_at_s": 2.1,
+   "where": {
+    "off_pallet_a": true,
+    "outside_work_area": true,
+    "seen_by_robot": false
+   }
+  },
+  "case_23": {
+   "state": "placed_on_b",
+   "detail": "",
+   "quality": "ok",
+   "left_pallet": null,
+   "detected": false,
+   "left_pallet_at_s": null,
+   "where": null
+  }
+ }
+}
